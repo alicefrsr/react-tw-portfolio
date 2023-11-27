@@ -1,0 +1,28 @@
+if (selectedFilter === 'All') {
+      setProjects(projectsData);
+    }
+    let filteredProjects;
+    if (selectedFilter === 'HTML/CSS Integration') {
+      filteredProjects = projectsData.filter((project) =>
+        project.categories.includes('HTML/CSS Integration')
+      );
+      setProjects(filteredProjects);
+    }
+    if (selectedFilter === 'Vanilla JS') {
+      filteredProjects = projectsData.filter((project) =>
+        project.categories.includes('Vanilla JS')
+      );
+      setProjects(filteredProjects);
+    }
+    if (selectedFilter === 'React') {
+      filteredProjects = projectsData.filter((project) =>
+        project.categories.includes('React')
+      );
+      setProjects(filteredProjects);
+    }
+    if (selectedFilter === 'Full Stack') {
+      filteredProjects = projectsData.filter((project) =>
+        project.categories.includes('Full Stack')
+      );
+      setProjects(filteredProjects);
+    }
