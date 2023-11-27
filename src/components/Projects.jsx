@@ -3,7 +3,14 @@ import { useState, useEffect } from 'react';
 import Modal from './Modal';
 
 // filter buttons and list of categories we want to match against
-let filters = ['All', 'Typescript', 'Full Stack'];
+let filters = [
+  'All',
+
+  'HTML/CSS Integration',
+  'Vanilla JS',
+  'React',
+  'Full Stack',
+];
 
 function Projects() {
   // Projects
@@ -45,18 +52,16 @@ function Projects() {
     <section name='projects' className='pt-28 pb-12'>
       {/* Container */}
       <div className='container mx-auto'>
-        <div className='flex items-center justify-between flex-wrap'>
-          <div className='mb-7 sm:mb-0'>
-            <h3 className='text-[2rem] font-[700]'>Projects</h3>
-          </div>
+        <h3 className='text-[2rem] font-[700] mb-8'>Projects</h3>
+        <div className='flex justify-center flex-wrap'>
           {/* Filter buttons */}
-          <div className='flex gap-3 shrink-0 flex-wrap'>
+          <div className='flex flex-col gap-2 sm:flex-row sm:gap-6 justify-center items-center shrink-0'>
             {filters.map((category) => (
               <button
                 key={category}
                 onClick={() => setSelectedFilter(category)}
-                className={`border-2 border-gray-900 py-1 px-4 rounded-[9px] hover:text-primaryColor hover:border-primaryColor ease-in duration-200  ${
-                  selectedFilter === category ? 'active ' : ''
+                className={`btn-filter   ${
+                  selectedFilter === category ? 'active' : ''
                 }`}
               >
                 {category}
@@ -64,7 +69,7 @@ function Projects() {
             ))}
           </div>
           {/* Project cards */}
-          <div className='flex items-center gap-4  flex-wrap mt-12'>
+          <div className='flex items-center gap-4 flex-wrap mt-12'>
             {/* Project card */}
             {projects?.slice(0, nextItems)?.map((project, index) => (
               <div
@@ -93,13 +98,10 @@ function Projects() {
             ))}
           </div>
         </div>{' '}
-        {/* end of flex-wrap div */}
-        <div className='text-center mt-6 '>
+        {/* load-more btn */}
+        <div className='flex justify-center mt-12 text-sm sm:text-base '>
           {nextItems < projects.length && projectsData.length > 6 && (
-            <button
-              onClick={loadMoreHandler}
-              className='text-white bg-indigo-500 hover:bg-indigo-400 py-2 px-4 rounded-[9px] font-[500] ease-in duration-200'
-            >
+            <button onClick={loadMoreHandler} className='btn  '>
               Load more
             </button>
           )}

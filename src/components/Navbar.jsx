@@ -29,28 +29,28 @@ const Navbar = () => {
   return (
     <nav className='z-[3] fixed w-full h-16 flex justify-between items-center bg-red-200 text-lg px-6 shadow-lg '>
       {/* Logo, --left-aligned */}
-      <span className='w-[40px] h-[40px] bg-transparentt  border-2 border-greyDark text-[18px] font-[500] rounded-full  flex items-center justify-center'>
+      <span className='w-[40px] h-[40px] bg-transparentt  border-2 border-current text-[18px] font-[500] rounded-full  flex items-center justify-center'>
         A
       </span>
 
       {/* Main menu -- centered */}
-      <ul className='hidden md:flex'>
-        <li className='nav-links px-4 cursor-pointer font-[500] hover:text-primaryColor hover:text-[700] duration-200'>
+      <ul className='hidden md:flex items-center gap-8 md:ml-28'>
+        <li className='nav-link'>
           <Link to='home' smooth={true} duration={500}>
             Home
           </Link>
         </li>
-        <li className='nav-links px-4 cursor-pointer font-[500] hover:text-primaryColor hover:text-[700] duration-200'>
+        <li className='nav-link'>
           <Link to='skills' smooth={true} duration={300}>
             Skills
           </Link>
         </li>
-        <li className='nav-links px-4 cursor-pointer font-[500] hover:text-primaryColor hover:text-[700] duration-200'>
+        <li className='nav-link'>
           <Link to='projects' smooth={true} duration={500}>
             Projects
           </Link>
         </li>
-        <li className='nav-links px-4 cursor-pointer font-[500] hover:text-primaryColor hover:text-[700] duration-200'>
+        <li className='nav-link'>
           <Link to='about' smooth={true} duration={500}>
             About
           </Link>
@@ -117,13 +117,13 @@ const Navbar = () => {
       {/* External links + btns, --right-aligned */}
       <div className='flex items-center '>
         {/* Socials icons */}
-        <ul className='flex gap-4 border-r-2 border-greyDark px-4'>
-          <li className='hover:text-primaryColor duration-200'>
+        <ul className='flex gap-4 border-r-2 border-current px-4'>
+          <li className='hover:text-rose-700 duration-200'>
             <a href='/' className=''>
               <FaLinkedin size={25} />
             </a>
           </li>
-          <li className='hover:text-primaryColor duration-200'>
+          <li className='hover:text-rose-700 duration-200'>
             <a
               href='https://github.com/alicefrsr'
               target='_blank'
@@ -138,7 +138,7 @@ const Navbar = () => {
         {/* Later... */}
         {/* Dark mode toggle */}
         <button
-          className='px-4 bg-transparent text-gray-900 dark:bg-indigo-900 dark:text-gray-300 hover:text-primaryColor duration-200'
+          className='px-4 bg-transparent dark:bg-indigo-900 dark:text-slate-200 hover:text-rose-600 duration-200'
           onClick={toggle}
         >
           {darkModeEnabled ? <IoSunny size={25} /> : <IoMoon size={25} />}

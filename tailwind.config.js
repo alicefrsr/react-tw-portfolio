@@ -4,10 +4,13 @@ export default {
   content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
   theme: {
     extend: {
+      height: {
+        screen: '100dvh',
+      },
       fontFamily: {
-        inter: "'Inter', sans-serif",
-        dm: "'DM Mono', monospace",
-        lora: "'Lora', serif",
+        inter: 'Inter, sans-serif',
+        dm: 'DM Mono, monospace',
+        dancing: 'Dancing Script, cursive',
       },
       colors: {
         mainColor: '#242d52',

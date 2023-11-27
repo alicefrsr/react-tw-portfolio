@@ -1,42 +1,51 @@
 import { HiArrowNarrowRight } from 'react-icons/hi';
-import { FaGithub, FaLinkedin } from 'react-icons/fa';
 
 import { Link } from 'react-scroll';
 
 const Home = () => {
   return (
-    <section name='home' className='w-full h-screen'>
+    <section name='home' className='h-screen'>
       {/* Container */}
-      <div className='max-w-[1000px] px-8 mx-auto flex flex-col justify-center w-full h-full'>
+      <div className=' max-w-[50rem] px-6 h-screen  mx-auto flex flex-col justify-center w-full'>
         <div className='text-2xl'>
-          <h1>
-            Hi, I&#39;m <span className='text-4xl font-[Lora]'>Anne</span>
+          <h1 className='text-3xl sm:text-4xl pb-4 font-dancing tracking-wide'>
+            Hello, I&#39;m <span className='text-5xl sm:text-6xl'>Anne.</span>
           </h1>
-          <h2 className=' text-sm uppercase '>Web Developer</h2>
+          <h2 className='pb-8 text-sm font-semibold text-rose-700 uppercase tracking-widest '>
+            Web Developer
+          </h2>
         </div>
-        <p>
+        <p className='py-2'>
           This site showcases some of the things I&#39;ve built while learning
-          how to code. I&#39;m looking to join a professional team where
-          I&#39;ll be given opportunities to take my newly gained skills to the
-          next level.
+          how to code. As an aspiring professional developer, I&#39;m currently
+          focused on building responsive and accessible web apps with{' '}
+          <span className='tech'> React</span>,{' '}
+          <span className='tech'> Tailwind </span> and{' '}
+          <span className='tech'> NextJS </span>to improve my front-end skills,
+          as well as integrating back-end technologies.
         </p>
         <p>
-          I care about design, user experience and web accessibility. Still
-          unsure about where my new career will take me, as an aspiring
-          developer, I&#39;m currentlyfocused on building responsive and
-          accessible applications with React, Tailwind and NextJS to improve my
-          frontend and design skills, as well as integrating back-end
-          technologies to my projects.
+          I care about design, user experience and web accessibility. Mostly, I
+          love to learn, build things and set myself new challenges.
         </p>
 
-        {/* Link to projects */}
-        <div className='py-8 lg:text-right'>
-          <Link to='projects' smooth={true} duration={500}>
-            <button className='group border-2 py-3 px-6 my-2 btn uppercase flex items-center '>
-              View projects{' '}
-              <span className='group-hover:rotate-90 duration-300'>
-                <HiArrowNarrowRight className='ml-3' />
+        {/* Link to about */}
+        <div className='pt-12 text-sm sm:text-base flex flex-col justify-center items-center gap-2 sm:gap-4 sm:flex-row sm:justify-start'>
+          <Link to='about' smooth={true} duration={500}>
+            <button className='group btn'>
+              <span className='group-hover:rotate-90 duration-200 '>
+                <HiArrowNarrowRight className='' />
               </span>
+              <span className='ml-3'> Find out more </span>
+            </button>
+          </Link>
+          {/* Link to projects */}
+          <Link to='projects' smooth={true} duration={500}>
+            <button className='group btn'>
+              <span className='group-hover:rotate-90 duration-200'>
+                <HiArrowNarrowRight className='' />
+              </span>
+              <span className='ml-3'>View projects </span>
             </button>
           </Link>
         </div>
