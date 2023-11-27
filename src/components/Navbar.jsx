@@ -1,4 +1,12 @@
-import { FaBars, FaTimes, FaGithub, FaLinkedin } from 'react-icons/fa';
+import {
+  FaBars,
+  FaTimes,
+  FaGithub,
+  FaLinkedin,
+  FaSun,
+  FaMoon,
+} from 'react-icons/fa';
+import { IoSunny, IoMoon } from 'react-icons/io5';
 
 import {
   HiBars3,
@@ -20,45 +28,41 @@ const Navbar = () => {
 
   return (
     <nav className='z-[3] fixed w-full h-16 flex justify-between items-center bg-red-200 text-lg px-6 shadow-lg '>
-      {/* Logo */}
-      <div className='flex items-center'>
-        <span className='w-[40px] h-[40px] bg-white text-[18px] font-[500] rounded-full flex items-center justify-center'>
-          AM
-        </span>
-      </div>
+      {/* Logo, --left-aligned */}
+      <span className='w-[40px] h-[40px] bg-transparentt  border-2 border-greyDark text-[18px] font-[500] rounded-full  flex items-center justify-center'>
+        A
+      </span>
 
       {/* Main menu -- centered */}
-      <ul className='hidden md:flex '>
-        <li className='nav-links px-4 cursor-pointer'>
+      <ul className='hidden md:flex'>
+        <li className='nav-links px-4 cursor-pointer font-[500] hover:text-primaryColor hover:text-[700] duration-200'>
           <Link to='home' smooth={true} duration={500}>
             Home
           </Link>
         </li>
-        <li className='nav-links px-4 cursor-pointer'>
+        <li className='nav-links px-4 cursor-pointer font-[500] hover:text-primaryColor hover:text-[700] duration-200'>
           <Link to='skills' smooth={true} duration={300}>
             Skills
           </Link>
         </li>
-        <li className='nav-links px-4 cursor-pointer'>
+        <li className='nav-links px-4 cursor-pointer font-[500] hover:text-primaryColor hover:text-[700] duration-200'>
           <Link to='projects' smooth={true} duration={500}>
             Projects
           </Link>
         </li>
-        <li className='nav-links px-4 cursor-pointer'>
+        <li className='nav-links px-4 cursor-pointer font-[500] hover:text-primaryColor hover:text-[700] duration-200'>
           <Link to='about' smooth={true} duration={500}>
             About
           </Link>
         </li>
       </ul>
-
-      {/* Mobile menu button / Hamburger or X --right-aligned */}
+      {/* Mobile menu button / Hamburger or X --centered */}
       <button
         className='md:hidden z-10 hover:text-primaryColor hover:rotate-180 duration-300'
         onClick={toggleMobileNav}
       >
         {!openMobileNav ? <HiBars3 /> : <FaTimes />}
       </button>
-
       {/* Mobile menu */}
       <ul
         className={
@@ -110,12 +114,36 @@ const Navbar = () => {
         </li>
       </ul>
 
-      <button
-        className='ml-2 bg-transparent text-gray-900 dark:bg-indigo-900 dark:text-gray-300'
-        onClick={toggle}
-      >
-        {darkModeEnabled ? <HiOutlineSun /> : <HiOutlineMoon />}
-      </button>
+      {/* External links + btns, --right-aligned */}
+      <div className='flex items-center '>
+        {/* Socials icons */}
+        <ul className='flex gap-4 border-r-2 border-greyDark px-4'>
+          <li className='hover:text-primaryColor duration-200'>
+            <a href='/' className=''>
+              <FaLinkedin size={25} />
+            </a>
+          </li>
+          <li className='hover:text-primaryColor duration-200'>
+            <a
+              href='https://github.com/alicefrsr'
+              target='_blank'
+              rel='noreferrer'
+              className=''
+            >
+              <FaGithub size={25} />
+            </a>
+          </li>
+        </ul>
+        {/* Language toggle */}
+        {/* Later... */}
+        {/* Dark mode toggle */}
+        <button
+          className='px-4 bg-transparent text-gray-900 dark:bg-indigo-900 dark:text-gray-300 hover:text-primaryColor duration-200'
+          onClick={toggle}
+        >
+          {darkModeEnabled ? <IoSunny size={25} /> : <IoMoon size={25} />}
+        </button>
+      </div>
     </nav>
   );
 };
