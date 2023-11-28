@@ -10,10 +10,11 @@ import proshopProductScreenImg from '../images/projects/proshopProductScreen.png
 const projectsData = [
   {
     id: 1,
+    urlName: 'Omnifood',
     // imageURL: '../assets/images/projects/omnifood.png',
     imageURL: omnifoodImg,
     title: 'Omnifood',
-    desc: 'Static website showcasing a food delivery company, from my first tutorial with HTML and CSS.',
+    desc: 'Static website showcasing a food delivery company, from my first tutorial with HTML and CSS. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla incidunt optio, praesentium doloribus pariatur saepe sint debitis veniam qui quod? Eandae totam numquam aspernatur?',
     tech: ['HTML', 'responsive CSS', 'Vanilla JS'],
     other: '',
     demoURL: 'https://food-ai-demo.netlify.app/',
@@ -24,6 +25,7 @@ const projectsData = [
   },
   {
     id: 2,
+    urlName: 'guessing-game',
     // imageURL: '../assets/images/projects/guess.png',
     imageURL: guessImg,
     title: 'Guessing game',
@@ -38,6 +40,7 @@ const projectsData = [
   },
   {
     id: 3,
+    urlName: 'splitter',
     // imageURL: '../assets/images/projects/splitter.png ',
     imageURL: splitterImg,
     title: 'Splitter',
@@ -52,6 +55,7 @@ const projectsData = [
   },
   {
     id: 4,
+    urlName: 'manage',
     // imageURL: '../assets/images/projects/manage.png ',
     imageURL: manageImg,
     title: 'Manage',
@@ -66,6 +70,7 @@ const projectsData = [
   },
   {
     id: 5,
+    urlName: 'devfinder',
     // imageURL: '../assets/images/projects/devfinder.png',
     imageURL: devfinderImg,
     title: 'Devfinder',
@@ -80,6 +85,7 @@ const projectsData = [
   },
   {
     id: 6,
+    urlName: 'todo-app',
     // imageURL: '../assets/images/projects/todoapp.png ',
     imageURL: todoappImg,
     title: 'Todo app',
@@ -94,6 +100,7 @@ const projectsData = [
   },
   {
     id: 7,
+    urlName: 'expensetracker-app',
     // imageURL: '../assets/images/projects/expensetracker.png',
     imageURL: expensetrackerImg,
     title: 'Expensetracker app',
@@ -108,6 +115,7 @@ const projectsData = [
   },
   {
     id: 8,
+    urlName: 'e-commerce',
     // imageURL: '../assets/images/projects/proshopProductScreen.png',
     imageURL: proshopProductScreenImg,
     title: 'e-commerce',

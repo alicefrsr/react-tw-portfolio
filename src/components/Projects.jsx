@@ -1,6 +1,8 @@
+import { useNavigate } from 'react-router-dom';
+
 import projectsData from '../assets/data/projectsData';
 import { useState, useEffect } from 'react';
-import Modal from './Modal';
+import ProjectModal from './ProjectModal';
 
 // filter buttons and list of categories we want to match against
 let filters = [
@@ -12,6 +14,7 @@ let filters = [
 ];
 
 function Projects() {
+  const navigate = useNavigate();
   // Projects
   const [projects, setProjects] = useState(projectsData);
   // const [nextItems, setNextItems] = useState(6);
@@ -21,7 +24,7 @@ function Projects() {
 
   // Project modal
   const [showModal, setShowModal] = useState(false);
-  const [activeId, setActiveId] = useState(null);
+  const [selectedProjectId, setSelectedProjectId] = useState(null);
 
   // const loadMoreHandler = () => {
   //   setNextItems((prev) => prev + 3);
@@ -29,15 +32,20 @@ function Projects() {
 
   const showModalHandler = (id) => {
     setShowModal(true);
-    setActiveId(id);
+    setSelectedProjectId(id);
   };
 
+  const closeModal = () => {
+    setShowModal(false);
+    navigate('/');
+  };
+
+  // filtering projects
   useEffect(() => {
     if (selectedFilter === 'All') {
       setProjects(projectsData);
     } else {
       let filteredProjects;
-      // determine which projects includes the selected filter in their 'categories' array
       filters.map((filter) => {
         if (selectedFilter === filter) {
           filteredProjects = projectsData.filter((project) =>
@@ -48,6 +56,14 @@ function Projects() {
       });
     }
   }, [selectedFilter]);
+
+  if (showModal) {
+    document.body.classList.add('active-modal');
+  } else {
+    {
+      document.body.classList.remove('active-modal');
+    }
+  }
 
   return (
     <section name='projects' className='h-fit py-24 bg-green-100 '>
@@ -61,7 +77,7 @@ function Projects() {
               key={category}
               onClick={() => setSelectedFilter(category)}
               className={`btn-filter   ${
-                selectedFilter === category ? 'active' : ''
+                selectedFilter === category ? 'active-filter' : ''
               }`}
             >
               {category}
@@ -70,27 +86,28 @@ function Projects() {
         </div>
 
         {/* Project cards */}
-        <div className='flex gap-12 items-center flex-wrap mt-20 sm:justify-between sm:gap-10 lg:justify-start '>
+        <ul className='flex gap-12 items-center flex-wrap mt-20 sm:justify-between sm:gap-10 lg:justify-start '>
           {/* Project card */}
           {/* {projects?.slice(0, nextItems)?.map((project, index) => ( */}
           {projects?.map((project, index) => (
-            <div
+            <li
               key={index}
               className='group max-w-full sm:w-[46.5%] lg:w-[30.5%] relative z-[1]'
+              onClick={() => showModalHandler(project.id)}
+              // onClick={() => setShowModal(true)}
             >
-              <figure className=''>
-                <img
-                  className='rounded-[9px] shadow-lg shadow-slate-300 group-hover:translate-x-1 group-hover:translate-y-1 ease-in duration-200 '
-                  src={project.imageURL}
-                  alt=''
-                />
-              </figure>
-              {/* Project card overlay */}
-              <div
-                className=' rounded-[9px] w-full h-full bg-teal-400 bg-opacity-40 absolute top-0 left-0 z-[2] hidden group-hover:block group-hover:translate-x-3 group-hover:translate-y-3 ease-in duration-200 group-hover:cursor-pointer'
-                onClick={() => showModalHandler(project.id)}
-              >
-                {/* <div className='w-full h-full flex items-center justify-center '>
+              <a href={`#project-modal=?${project.urlName}`}>
+                <figure className=''>
+                  <img
+                    className='rounded-[9px] shadow-lg shadow-slate-300 group-hover:translate-x-1 group-hover:translate-y-1 ease-in duration-200 '
+                    src={project.imageURL}
+                    alt={project.title}
+                  />
+                </figure>
+
+                {/* Project card overlay for hover effect */}
+                <div className=' rounded-[9px] w-full h-full bg-teal-400 bg-opacity-40 absolute top-0 left-0 z-[1] hidden group-hover:block group-hover:translate-x-3 group-hover:translate-y-3 ease-in duration-200 '>
+                  {/* <div className='w-full h-full flex items-center justify-center '>
                   <button
                     className='btn'
                     onClick={() => showModalHandler(project.id)}
@@ -98,10 +115,11 @@ function Projects() {
                     See details
                   </button>
                 </div> */}
-              </div>
-            </div>
+                </div>
+              </a>
+            </li>
           ))}
-        </div>
+        </ul>
       </div>{' '}
       {/* load-more btn */}
       {/* <div className='flex justify-center mt-12 text-sm sm:text-base '>
@@ -111,7 +129,11 @@ function Projects() {
           </button>
         )}
       </div> */}
-      {showModal && <Modal setShowModal={setShowModal} activeId={activeId} />}
+      <ProjectModal
+        showModal={showModal}
+        onClose={closeModal}
+        selectedProjectId={selectedProjectId}
+      />
     </section>
   );
 }
