@@ -31,12 +31,13 @@
 }
 
 .btn-filter {
-  @apply px-2 py-1 text-sm font-semibold text-rose-700 hover:text-teal-700 uppercase tracking-widest;
+  @apply px-2 py-1 text-sm font-semibold text-rose-700 hover:text-teal-700 uppercase tracking-widest border-2 border-transparent rounded-[9px];
 }
 
 .active {
-  @apply text-teal-700 border-2 px-2 py-1 border-current;
+  @apply text-teal-700 border-current;
 }
+
 .tech {
   @apply font-dm font-semibold;
 }

@@ -55,7 +55,7 @@ function Projects() {
       <div className='container mx-auto'>
         <h3 className='text-[2rem] font-[700] mb-8'>Projects</h3>
         {/* Filter buttons */}
-        <div className='flex gap-3 justify-center items-center flex-wrap'>
+        <div className='flex gap-3 justify-center items-center flex-wrap '>
           {filters.map((category) => (
             <button
               key={category}
@@ -72,7 +72,6 @@ function Projects() {
         {/* Project cards */}
         <div className='flex gap-12 items-center flex-wrap mt-20 sm:justify-between sm:gap-10 lg:justify-start '>
           {/* Project card */}
-
           {/* {projects?.slice(0, nextItems)?.map((project, index) => ( */}
           {projects?.map((project, index) => (
             <div
@@ -86,7 +85,7 @@ function Projects() {
                   alt=''
                 />
               </figure>
-
+              {/* Project card overlay */}
               <div
                 className=' rounded-[9px] w-full h-full bg-teal-400 bg-opacity-40 absolute top-0 left-0 z-[2] hidden group-hover:block group-hover:translate-x-3 group-hover:translate-y-3 ease-in duration-200 group-hover:cursor-pointer'
                 onClick={() => showModalHandler(project.id)}

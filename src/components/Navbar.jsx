@@ -7,7 +7,7 @@ import {
   FaMoon,
 } from 'react-icons/fa';
 import { IoSunny, IoMoon } from 'react-icons/io5';
-
+import { GrLanguage } from 'react-icons/gr';
 import {
   HiBars3,
   HiOutlineGlobeAlt,
