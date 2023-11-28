@@ -1,3 +1,5 @@
+import { FaGithub } from 'react-icons/fa';
+import { LuExternalLink } from 'react-icons/lu';
 import projectsData from '../assets/data/projectsData';
 
 function Modal({ activeId, setShowModal }) {
@@ -10,25 +12,47 @@ function Modal({ activeId, setShowModal }) {
             <img className='rounded-[9px] ' src={project.imageURL} alt='' />
           </figure>
           <div>
-            <h2 className='text-2xl font-[500] my-5'>{project.title}</h2>
+            <div className='my-5'>
+              <h2 className='text-2xl font-[500]'>{project.title}</h2>
+            </div>
+
             <p className='text-base leading-7'>{project.desc}</p>
             <div className='mt-5 flex items-center gap-3 flex-wrap'>
-              <h4 className='text-md text-[700]'>Technologies</h4>
               {project.tech.map((tech, index) => (
                 <span
                   key={index}
-                  className='bg-gray-200 py-1 px-2 rounded-[5px] text-[14px] leading-0'
+                  className='bg-gray-200 py-1 px-2 rounded-[5px] text-[14px] leading-0 tech'
                 >
                   {tech}
                 </span>
               ))}
             </div>
-            <a
+            <div className='mt-8 flex gap-3 items-center justify-end'>
+              <a
+                href={project.demoURL}
+                target='_blank'
+                rel='noreferrer'
+                className='rounded-[9px] border-2 border-current py-1 px-2 flex gap-2 hover:text-teal-800 duration-300'
+              >
+                <LuExternalLink size={25} title='External Link' />
+                Live demo
+              </a>
+              <a
+                href={project.codeURL}
+                target='_blank'
+                rel='noreferrer'
+                className='rounded-[9px] border-2 border-current py-1 px-2 flex gap-2 hover:text-teal-800 duration-300'
+              >
+                <FaGithub size={25} title='Github' />
+                View code
+              </a>
+            </div>
+            {/* <a
               href={project.siteURL}
               className='bg-primaryColor text-white py-2 px-4 my-8 rounded-[9px] font-[500] inline-block mt-6 hover:bg-red-200 ease-in duration-300 '
             >
               Live Site
-            </a>
+            </a> */}
           </div>
           <button
             onClick={() => setShowModal(false)}

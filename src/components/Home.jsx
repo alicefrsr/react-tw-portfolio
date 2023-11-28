@@ -6,13 +6,13 @@ const Home = () => {
   return (
     <section name='home' className='h-screen'>
       {/* Container */}
-      <div className=' max-w-[50rem] px-6 h-screen  mx-auto flex flex-col justify-center w-full'>
+      <div className='max-w-[60rem] px-6 h-screen  mx-auto flex flex-col justify-center w-full'>
         <div className='text-2xl'>
           <h1 className='text-3xl sm:text-4xl pb-4 font-dancing tracking-wide'>
             Hello, I&#39;m <span className='text-5xl sm:text-6xl'>Anne.</span>
           </h1>
           <h2 className='pb-8 text-sm font-semibold text-rose-700 uppercase tracking-widest '>
-            Web Developer
+            Junior Web Developer
           </h2>
         </div>
         <p className='py-2'>
@@ -32,18 +32,18 @@ const Home = () => {
         {/* Link to about */}
         <div className='pt-12 text-sm sm:text-base flex flex-col justify-center items-center gap-2 sm:gap-4 sm:flex-row sm:justify-start'>
           <Link to='about' smooth={true} duration={500}>
-            <button className='group btn'>
+            <button className='group btn hover:shadow-primaryColor'>
               <span className='group-hover:rotate-90 duration-200 '>
-                <HiArrowNarrowRight className='' />
+                <HiArrowNarrowRight />
               </span>
               <span className='ml-3'> Find out more </span>
             </button>
           </Link>
           {/* Link to projects */}
           <Link to='projects' smooth={true} duration={500}>
-            <button className='group btn'>
+            <button className='group btn hover:shadow-primaryColor'>
               <span className='group-hover:rotate-90 duration-200'>
-                <HiArrowNarrowRight className='' />
+                <HiArrowNarrowRight />
               </span>
               <span className='ml-3'>View projects </span>
             </button>
