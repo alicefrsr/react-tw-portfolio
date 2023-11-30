@@ -66,9 +66,9 @@ function Projects() {
   }
 
   return (
-    <section name='projects' className='h-fit py-24 bg-green-100 '>
+    <section id='projects' className='h-fit py-24 '>
       {/* Container */}
-      <div className='container mx-auto'>
+      <div className='projects-container mx-auto'>
         <h3 className='text-[2rem] font-[700] mb-8'>Projects</h3>
         {/* Filter buttons */}
         <div className='flex gap-3 justify-center items-center flex-wrap '>

@@ -15,10 +15,11 @@ import {
   HiOutlineSun,
 } from 'react-icons/hi2';
 
-import { Link } from 'react-scroll';
+// import { Link } from 'react-scroll';
 import { useState } from 'react';
 import useDarkMode from '../hooks/useDarkMode';
 
+const navlinks = ['hello', 'projects', 'skills', 'bio'];
 const Navbar = () => {
   const [darkModeEnabled, toggle] = useDarkMode();
   const [openMobileNav, setOpenMobileNav] = useState(false);
@@ -35,83 +36,42 @@ const Navbar = () => {
 
       {/* Main menu -- centered */}
       <ul className='hidden md:flex items-center gap-8 md:ml-28'>
-        <li className='nav-link'>
-          <Link to='home' smooth={true} duration={500}>
-            Home
-          </Link>
-        </li>
-        <li className='nav-link'>
-          <Link to='skills' smooth={true} duration={300}>
-            Skills
-          </Link>
-        </li>
-        <li className='nav-link'>
-          <Link to='projects' smooth={true} duration={500}>
-            Projects
-          </Link>
-        </li>
-        <li className='nav-link'>
-          <Link to='about' smooth={true} duration={500}>
-            About
-          </Link>
-        </li>
+        {navlinks.map((navlink, index) => (
+          <li key={index}>
+            <a href={`#${navlink}`} className='nav-link'>
+              {navlink}
+            </a>
+          </li>
+        ))}
       </ul>
+
       {/* Mobile menu button / Hamburger or X --centered */}
       <button
-        className='md:hidden z-10 hover:text-primaryColor hover:rotate-180 duration-300'
+        className='md:hidden p-1 z-10 border-2 border-blue-300 hover:text-teal-700 hover:rotate-180 duration-300'
         onClick={toggleMobileNav}
       >
         {!openMobileNav ? <HiBars3 /> : <FaTimes />}
       </button>
+
       {/* Mobile menu */}
       <ul
         className={
           !openMobileNav
             ? `hidden`
-            : `absolute top-0 left-0 w-[15rem] h-screen bg-white flex flex-col justify-center items-center`
+            : `absolute top-0 left-0 w-[15rem] h-screen bg-white flex flex-col justify-center items-center uppercase`
         }
       >
-        <li className='py-6 text-2xl hover:cursor-pointer hover:text-primaryColor'>
-          <Link
-            onClick={toggleMobileNav}
-            activeClass='active'
-            to='home'
-            smooth={true}
-            duration={300}
-          >
-            Home
-          </Link>
-        </li>
-        <li className='py-6 text-2xl hover:cursor-pointer hover:text-primaryColor'>
-          <Link
-            onClick={toggleMobileNav}
-            to='skills'
-            smooth={true}
-            duration={300}
-          >
-            Skills
-          </Link>
-        </li>
-        <li className='py-6 text-2xl hover:cursor-pointer hover:text-primaryColor'>
-          <Link
-            onClick={toggleMobileNav}
-            to='projects'
-            smooth={true}
-            duration={300}
-          >
-            Projects
-          </Link>
-        </li>
-        <li className='py-6 text-2xl hover:cursor-pointer hover:text-primaryColor'>
-          <Link
-            onClick={toggleMobileNav}
-            to='about'
-            smooth={true}
-            duration={300}
-          >
-            About
-          </Link>
-        </li>
+        {navlinks.map((navlink, index) => (
+          <li key={index} className='m-4'>
+            <a
+              onClick={toggleMobileNav}
+              href={`#${navlink}`}
+              className='p-2 font-semibold text-md hover:text-teal-700'
+            >
+              {navlink}
+            </a>
+          </li>
+        ))}
       </ul>
 
       {/* External links + btns, --right-aligned */}

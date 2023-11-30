@@ -1,15 +1,17 @@
 import Navbar from '../components/Navbar';
-import Home from '../components/Home';
+import Hello from '../components/Hello';
 import Projects from '../components/Projects';
-import About from '../components/About';
+import Skills from '../components/Skills';
+import Bio from '../components/Bio';
 
 function Homepage() {
   return (
     <>
       <Navbar />
-      <Home />
+      <Hello />
       <Projects />
-      <About />
+      <Skills />
+      <Bio />
     </>
   );
 }
