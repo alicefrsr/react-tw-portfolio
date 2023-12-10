@@ -47,20 +47,20 @@ function ProjectModal({ selectedProjectId, showModal, onClose }) {
           role='dialog'
           aria-modal='true'
           onClick={(e) => e.stopPropagation()} // option 1
-          className='w-[90%] md:max-w-[40rem] bg-white p-5 rounded-[9px] z-20 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2'
+          className='w-[90%] md:max-w-[40rem] bg-white p-5 rounded-[9px] z-20 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 dark:bg-blueDark'
         >
           <div>
             {/* Close button */}
             <button
               id='close-modal'
               onClick={() => onClose()}
-              className='absolute top-[1.7rem] right-[1.7rem] w-[1.8rem] h-[1.8rem] bg-white  text-[25px] flex items-center justify-center rounded-[3px] leading-0'
+              className='absolute top-[1.7rem] right-[1.7rem] w-[1.8rem] h-[1.8rem] bg-white  text-[25px] flex items-center justify-center rounded-[3px] leading-0 hover:text-teal-500 duration-300  dark:text-blueDark dark:hover:text-teal-500'
             >
               &times;
             </button>
             <figure>
               <img
-                className='rounded-[9px] border-2 border-slate-200 '
+                className='rounded-[9px] border-2 border-slate-200  dark:border-none'
                 src={project.imageURL}
                 alt={project.title}
               />
@@ -74,10 +74,7 @@ function ProjectModal({ selectedProjectId, showModal, onClose }) {
               {/* Tech stack */}
               <ul className='mt-8 flex items-center gap-2 flex-wrap'>
                 {project.tech.map((tech, index) => (
-                  <li
-                    key={index}
-                    className='bg-gray-200 py-1 px-2 rounded-[5px] text-[14px] font-dm '
-                  >
+                  <li key={index} className='tech-full text-[14px]'>
                     {tech}
                   </li>
                 ))}
@@ -89,7 +86,7 @@ function ProjectModal({ selectedProjectId, showModal, onClose }) {
                     href={project.demoURL}
                     target='_blank'
                     rel='noreferrer'
-                    className='rounded-[9px] border-2 border-current py-1 px-2 flex gap-2 hover:text-teal-800 duration-300'
+                    className='rounded-md border-2 border-current py-1 px-2 flex gap-2 hover:text-teal-500 duration-300'
                   >
                     <LuExternalLink size={25} title='External link' />
                     Live demo
@@ -100,7 +97,7 @@ function ProjectModal({ selectedProjectId, showModal, onClose }) {
                     href={project.codeURL}
                     target='_blank'
                     rel='noreferrer'
-                    className='rounded-[9px] border-2 border-current py-1 px-2 flex gap-2 hover:text-teal-800 duration-300'
+                    className='rounded-md border-2 border-current py-1 px-2 flex gap-2 hover:text-teal-500 duration-300'
                   >
                     <FaGithub size={25} title='Github' />
                     View code

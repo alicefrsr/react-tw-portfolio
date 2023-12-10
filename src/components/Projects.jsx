@@ -66,10 +66,10 @@ function Projects() {
   }
 
   return (
-    <section id='projects' className='h-fit py-24 '>
+    <section id='projects' className='h-fit pt-24 mb-16'>
       {/* Container */}
       <div className='projects-container mx-auto'>
-        <h3 className='text-[2rem] font-[700] mb-8'>Projects</h3>
+        <h3 className='font-semibold text-[2rem] ] mb-8 '>Projects</h3>
         {/* Filter buttons */}
         <div className='flex gap-3 justify-center items-center flex-wrap '>
           {filters.map((category) => (
@@ -99,14 +99,14 @@ function Projects() {
               <a href={`#project-modal=?${project.urlName}`}>
                 <figure className=''>
                   <img
-                    className='rounded-[9px] shadow-lg shadow-slate-300 group-hover:translate-x-1 group-hover:translate-y-1 ease-in duration-200 '
+                    className='rounded-[9px] shadow-lg shadow-slate-300 dark:shadow-blueDarkest  group-hover:translate-x-1 group-hover:-translate-y-1 ease-in duration-200'
                     src={project.imageURL}
                     alt={project.title}
                   />
                 </figure>
 
                 {/* Project card overlay for hover effect */}
-                <div className=' rounded-[9px] w-full h-full bg-teal-400 bg-opacity-40 absolute top-0 left-0 z-[1] hidden group-hover:block group-hover:translate-x-3 group-hover:translate-y-3 ease-in duration-200 '>
+                <div className=' rounded-[9px] w-full h-full bg-teal-400 bg-opacity-40 absolute top-0 left-0 z-[1] hidden group-hover:block group-hover:translate-x-3 group-hover:-translate-y-3 ease-in duration-200 '>
                   {/* <div className='w-full h-full flex items-center justify-center '>
                   <button
                     className='btn'

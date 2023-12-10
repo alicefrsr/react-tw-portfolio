@@ -19,7 +19,8 @@ import {
 import { useState } from 'react';
 import useDarkMode from '../hooks/useDarkMode';
 
-const navlinks = ['hello', 'projects', 'skills', 'bio'];
+const navlinks = ['projects', 'skills', 'bio'];
+const mobileNavlinks = ['hello', 'projects', 'skills', 'bio'];
 const Navbar = () => {
   const [darkModeEnabled, toggle] = useDarkMode();
   const [openMobileNav, setOpenMobileNav] = useState(false);
@@ -28,11 +29,13 @@ const Navbar = () => {
   };
 
   return (
-    <nav className='z-[3] fixed w-full h-16 flex justify-between items-center bg-red-200 text-lg px-6 shadow-lg '>
+    <nav className='z-[3] fixed w-full h-16 flex justify-between items-center bg-slate-100 dark:bg-blueDarkest text-lg px-6 shadow-lg'>
       {/* Logo, --left-aligned */}
-      <span className='w-[40px] h-[40px] bg-transparentt  border-2 border-current text-[18px] font-[500] rounded-full  flex items-center justify-center'>
-        A
-      </span>
+      <a href='#hello'>
+        <span className='w-[40px] h-[40px] bg-transparent border-2 border-current text-[18px] font-[500] rounded-full flex items-center justify-center hover:text-teal-500 duration-300'>
+          A
+        </span>
+      </a>
 
       {/* Main menu -- centered */}
       <ul className='hidden md:flex items-center gap-8 md:ml-28'>
@@ -47,7 +50,7 @@ const Navbar = () => {
 
       {/* Mobile menu button / Hamburger or X --centered */}
       <button
-        className='md:hidden p-1 z-10 border-2 border-blue-300 hover:text-teal-700 hover:rotate-180 duration-300'
+        className='md:hidden p-1 z-10 border-2 border-blue-300 hover:text-teal-600 hover:rotate-180 duration-300'
         onClick={toggleMobileNav}
       >
         {!openMobileNav ? <HiBars3 /> : <FaTimes />}
@@ -58,15 +61,15 @@ const Navbar = () => {
         className={
           !openMobileNav
             ? `hidden`
-            : `absolute top-0 left-0 w-[15rem] h-screen bg-white flex flex-col justify-center items-center uppercase`
+            : `absolute top-0 left-0 w-[15rem] h-screen bg-white flex flex-col justify-center items-center uppercase dark:bg-blueDarkest`
         }
       >
-        {navlinks.map((navlink, index) => (
+        {mobileNavlinks.map((navlink, index) => (
           <li key={index} className='m-4'>
             <a
               onClick={toggleMobileNav}
               href={`#${navlink}`}
-              className='p-2 font-semibold text-md hover:text-teal-700'
+              className='p-2 font-semibold text-md hover:text-teal-600'
             >
               {navlink}
             </a>
@@ -78,12 +81,12 @@ const Navbar = () => {
       <div className='flex items-center '>
         {/* Socials icons */}
         <ul className='flex gap-4 border-r-2 border-current px-4'>
-          <li className='hover:text-rose-700 duration-200'>
+          <li className='hover:text-teal-500 duration-300'>
             <a href='/' className=''>
               <FaLinkedin size={25} />
             </a>
           </li>
-          <li className='hover:text-rose-700 duration-200'>
+          <li className='hover:text-teal-500 duration-300'>
             <a
               href='https://github.com/alicefrsr'
               target='_blank'
@@ -98,7 +101,7 @@ const Navbar = () => {
         {/* Later... */}
         {/* Dark mode toggle */}
         <button
-          className='px-4 bg-transparent dark:bg-indigo-900 dark:text-slate-200 hover:text-rose-600 duration-200'
+          className='px-4 dark:bg-blueDarkest hover:text-teal-500'
           onClick={toggle}
         >
           {darkModeEnabled ? <IoSunny size={25} /> : <IoMoon size={25} />}

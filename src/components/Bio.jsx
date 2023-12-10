@@ -1,21 +1,21 @@
 function Bio() {
   return (
-    <section id='bio' className='w-full h-screen'>
+    <section id='bio' className='py-20 md:py-0 tracking-wide '>
       {/* Container */}
-      <div className='lg:max-w-[58rem] sm:max-w-[60%] px-6 h-screen  mx-auto flex items-center w-full'>
+      <div className='bio-container'>
         {/* <h3 className='text-[2rem] font-[700] mb-8'>Bio</h3> */}
 
         {/* bio -- left-aligned */}
         <div className='flex flex-col gap-3 flex-1 '>
-          <h3 className='subtitle '>Bio</h3>
+          <h3 className='subtitle  text-teal-500 '>Bio</h3>
           <p>
             In a previous life I was a{' '}
             <span className='font-bold'>film editor</span> based in London,
             working on TV & feature documentaries for 20 years. I left after
             Brexit in pursuit of new horizons, sunshine and sailing adventures,
             which led me to the Côte d&#39;Azur and Spain, juggling short
-            editing contracts with my trusted and regular clients back in London
-            during the winter, with working as a
+            editing contracts with my regular clients back in London during the
+            winter, with working as a
             <span className='font-bold'> deckhand/stewardess </span>
             on private superyachts during 4 mediterranean seasons (2017-2020).
           </p>
@@ -34,7 +34,8 @@ function Bio() {
             Today I can&#39;t imagine doing anything else. At this stage in my
             never-ending learning journey, I&#39;m looking for a professional
             and friendly team that will give me the opportunity to take my
-            skills to the next level to build useful tools for everyone.
+            skills to the next level so I can be part of building useful tools
+            and a more inclusive and accessible digital world.
           </p>
         </div>
       </div>

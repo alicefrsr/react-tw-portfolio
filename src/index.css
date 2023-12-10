@@ -4,12 +4,13 @@
 
 @layer base {
   body {
-    @apply font-[Inter];
+    @apply font-[Inter] bg-white text-blueDark dark:text-slate-200 dark:bg-blueDark;
   }
 }
 
 html {
   scroll-behavior: smooth;
+  /* scroll-padding-top: 4rem; */
 }
 
 * {
@@ -22,26 +23,40 @@ html {
   max-width: 1170px;
   padding-left: 2rem;
   padding-right: 2rem;
-  margin: auto;
+  /* margin: auto; */
+}
+
+.bio-container {
+  @apply lg:max-w-[58rem] sm:max-w-[60%] h-screen px-6 mx-auto flex items-center w-full;
 }
 
 .nav-link {
-  @apply uppercase text-base font-semibold px-2 py-1 text-rose-800 hover:text-teal-700 duration-200 tracking-wide  active:text-teal-700  focus:text-teal-700;
+  @apply uppercase text-base font-semibold px-2 py-1 hover:text-teal-500 duration-300 tracking-wide  active:text-teal-500  focus:text-teal-500;
+}
+
+.subtitle {
+  @apply pb-8 text-sm font-semibold uppercase tracking-widest;
 }
 
 .btn {
-  @apply flex items-center py-2 px-4 bg-white border-2 rounded-[9px] border-current uppercase shadow-md shadow-slate-400 hover:border-primaryColor hover:text-primaryColor 
-  ease-in duration-200 hover:cursor-pointer;
+  @apply flex items-center py-2 px-4 uppercase bg-slate-100 border-2 rounded-md border-current shadow-md shadow-slate-400
+  ease-in duration-300 hover:cursor-pointer  dark:bg-blueDarkest  dark:shadow-blueDarkest;
 }
 
 .btn-filter {
-  @apply px-2 py-1 text-sm font-semibold text-rose-700 hover:text-teal-700 uppercase tracking-widest border-2 border-transparent rounded-[9px];
+  @apply font-dm px-2 py-1 text-base font-semibold hover:text-teal-500 tracking-wide border-2 border-transparent rounded-sm duration-300;
 }
-.subtitle {
-  @apply pb-8 text-sm font-semibold text-rose-700 uppercase tracking-widest;
-}
+
 .active-filter {
-  @apply text-teal-700 border-current;
+  @apply text-teal-500 bg-slate-100 dark:bg-blueDarkest;
+}
+
+.tech-full {
+  @apply border-2 border-slate-100 bg-slate-100 rounded-sm px-2 py-1 font-dm dark:bg-blueDarkest dark:border-blueDarkest;
+}
+
+.tech-outline {
+  @apply border-2 border-slate-200 rounded-sm px-2 py-1 font-dm  dark:border-blueDarkest;
 }
 
 .active-modal {
