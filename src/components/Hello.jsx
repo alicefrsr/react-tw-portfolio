@@ -1,5 +1,6 @@
 import { HiArrowNarrowRight } from 'react-icons/hi';
 // import profilePix from '../assets/images/anne-sq.jpg';
+import { motion } from 'framer-motion';
 
 const Hello = () => {
   return (
@@ -12,16 +13,24 @@ const Hello = () => {
           alt=''
         /> */}
 
-        <div className='text-2xl'>
+        <motion.div
+          initial={{ x: -500, opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
+          transition={{ duration: 1, ease: 'easeInOut' }}
+          className='text-2xl'
+        >
           <h1 className='text-3xl sm:text-4xl pb-4 font-dancing tracking-wide'>
             Hello, I&#39;m <span className='text-5xl sm:text-6xl '>Anne.</span>
           </h1>
-          <h2 className='subtitle pb-12 text-slate-400 dark:text-teal-300 '>
-            Web Developer
-          </h2>
-        </div>
+          <h2 className='jobtitle pb-12'>Web Developer</h2>
+        </motion.div>
 
-        <div className='flex flex-col gap-3'>
+        <motion.div
+          initial={{ x: 500, opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
+          transition={{ duration: 1, ease: 'easeInOut' }}
+          className='flex flex-col gap-3'
+        >
           <p className=''>
             This site showcases some of the things I&#39;ve built while learning
             how to code. As a self-taught and aspiring professional developer,
@@ -35,10 +44,15 @@ const Hello = () => {
             I love to learn, build things, problem-solve and take on new
             challenges.
           </p>
-        </div>
+        </motion.div>
 
-        <div className='pt-12 text-sm sm:text-base flex justify-center sm:justify-start'>
-          {/* Link to skills */}
+        <motion.div
+          initial={{ x: -500, opacity: 0 }}
+          animate={{ x: 0, opacity: 1 }}
+          transition={{ duration: 1, ease: 'easeInOut' }}
+          className='pt-12 text-sm sm:text-base flex justify-center sm:justify-start'
+        >
+          {/* Link to projects */}
           <a href='#projects'>
             <button className='group btn hover:shadow-teal-600  hover:border-teal-600  hover:text-teal-600'>
               <span className='group-hover:rotate-90 duration-200'>
@@ -47,7 +61,7 @@ const Hello = () => {
               <span className='ml-3'>View projects </span>
             </button>
           </a>
-        </div>
+        </motion.div>
       </div>
     </section>
   );

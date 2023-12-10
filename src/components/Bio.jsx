@@ -1,35 +1,26 @@
 function Bio() {
   return (
-    <section id='bio' className='py-20 mb-20 tracking-wide '>
+    <section id='bio' className='pt-24 mb-20 tracking-wide '>
       {/* Container */}
       <div className='bio-container'>
         {/* <h3 className='text-[2rem] font-[700] mb-8'>Bio</h3> */}
 
         {/* bio -- left-aligned */}
         <div className='flex flex-col gap-3 flex-1 '>
-          <h3 className='subtitle pb-12 text-teal-500  dark:text-teal-300 '>
-            Mini Bio
+          <h3 className='subtitle pb-12 text-teal-600  dark:text-teal-300 '>
+            Bio
           </h3>
           <p>
             In a previous life I was a{' '}
-            <span className='subtitle text-slate-400  dark:text-teal-300'>
-              film editor
-            </span>{' '}
-            based in London for 20 years, working on TV & feature documentaries,
-            music promos, corporate videos and commercials. I left after Brexit
-            in pursuit of new horizons, sunshine and sailing adventures, which
-            led me to the Côte d&#39;Azur in France, and the Costa Brava and
-            Mallorca in Spain, juggling short editing contracts with my regular
-            clients back in London during the winter, with working as a
-            <span className='subtitle text-slate-400  dark:text-teal-300'>
-              {' '}
-              deckhand, stewardess{' '}
-            </span>{' '}
-            and
-            <span className='subtitle text-slate-400  dark:text-teal-300'>
-              {' '}
-              junior engineer{' '}
-            </span>
+            <span className='jobtitle'>film editor</span> based in London for 20
+            years, working on TV & feature documentaries, music promos,
+            corporate videos and commercials. I left after Brexit in pursuit of
+            new horizons, sunshine and sailing adventures, which led me to the
+            Côte d&#39;Azur in France, and the Costa Brava and Mallorca in
+            Spain, juggling short editing contracts with my regular clients back
+            in London during the winter, with working as a
+            <span className='jobtitle'> deckhand, stewardess </span> and
+            <span className='jobtitle'> junior engineer </span>
             on private superyachts during the summer in the Mediterranean
             (2017-2020).
           </p>

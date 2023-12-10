@@ -1,3 +1,5 @@
+import { motion } from 'framer-motion';
+
 let skills = [
   'MacOS',
   'VS Code',
@@ -23,20 +25,22 @@ let skills = [
 ];
 const skillsLevel1 = [
   'Linux',
+  'Windows',
   'Java',
+  'Eclipse',
   'Swift',
   'SwiftUI',
   'Python',
   'Styled Components',
 ];
-const skillsNow = ['NextJS', 'Typescript', 'Python'];
+const skillsNow = ['NextJS', 'Typescript', 'Python', 'Web accessibility'];
 const skillsToDo = [
-  'Solidity',
   'Testing',
   'CI/CD',
   'Jest',
   'Cypress',
   'Jenkins',
+  'Solidity',
 ];
 const languages = ['English', 'French', 'Spanish'];
 
@@ -48,21 +52,16 @@ function Skills() {
         {/* <h3 className='text-[2rem] font-[700] mb-8'>Skills</h3> */}
 
         {/* skills */}
-        <div className='flex flex-col '>
-          <h3 className='subtitle pb-12 text-teal-500 dark:text-teal-300 '>
+        <div className='flex flex-col'>
+          <motion.h3
+            initial={{ x: -500, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{ duration: 1, ease: 'easeInOut' }}
+            className='subtitle pb-12 text-teal-600 dark:text-teal-300 '
+          >
             Toolbox
-          </h3>
+          </motion.h3>
           <div className='flex flex-col flex-1 gap-10 '>
-            <div>
-              <p className='pb-1 font-semibold'>Non-programming languages !</p>
-              <ul className='flex flex-wrap gap-2 pt-2'>
-                {languages.map((language, index) => (
-                  <li key={index} className='lang-outline'>
-                    {language}
-                  </li>
-                ))}
-              </ul>
-            </div>
             <div>
               <p className='pb-1 font-semibold'>
                 What I use on a daily or regular basis:
@@ -78,7 +77,7 @@ function Skills() {
 
             <div>
               <p className='pb-1 font-semibold'>
-                Technologies I had a brief introduction to:
+                Technologies I had some exposure to:
               </p>
               <ul className='flex flex-wrap gap-2 pt-2'>
                 {skillsLevel1.map((skill, index) => (
@@ -110,6 +109,17 @@ function Skills() {
                 {skillsToDo.map((skill, index) => (
                   <li key={index} className='tech-outline'>
                     {skill}
+                  </li>
+                ))}
+              </ul>
+            </div>
+
+            <div>
+              <p className='pb-1 font-semibold'>Non-programming languages...</p>
+              <ul className='flex flex-wrap gap-2 pt-2'>
+                {languages.map((language, index) => (
+                  <li key={index} className='lang-outline'>
+                    {language}
                   </li>
                 ))}
               </ul>

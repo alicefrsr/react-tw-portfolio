@@ -89,14 +89,12 @@ function Projects() {
         </div>
 
         {/* Project cards */}
-        <motion.ul
-          layout
-          className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 lg:gap-16 mt-20  '
-        >
+        <motion.ul className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 lg:gap-16 mt-20  '>
           {/* Project card */}
           {/* {projects?.slice(0, nextItems)?.map((project, index) => ( */}
           {projects?.map((project, index) => (
             <motion.li
+              layout
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               // exit={{ opacity: 0 }}
