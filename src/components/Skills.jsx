@@ -38,7 +38,7 @@ const skillsToDo = [
   'Cypress',
   'Jenkins',
 ];
-const skills5 = ['React', 'Python'];
+const languages = ['English', 'French', 'Spanish'];
 
 function Skills() {
   return (
@@ -49,10 +49,24 @@ function Skills() {
 
         {/* skills */}
         <div className='flex flex-col '>
-          <h3 className='subtitle text-teal-500 '>Toolbox</h3>
-          <div className='flex flex-col flex-1 gap-8 '>
+          <h3 className='subtitle pb-12 text-teal-500 dark:text-teal-300 '>
+            Toolbox
+          </h3>
+          <div className='flex flex-col flex-1 gap-10 '>
             <div>
-              <p className='pb-1'>What I use on a daily or regular basis:</p>
+              <p className='pb-1 font-semibold'>Non-programming languages !</p>
+              <ul className='flex flex-wrap gap-2 pt-2'>
+                {languages.map((language, index) => (
+                  <li key={index} className='lang-outline'>
+                    {language}
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div>
+              <p className='pb-1 font-semibold'>
+                What I use on a daily or regular basis:
+              </p>
               <ul className='flex flex-wrap gap-2 pt-2'>
                 {skills.map((skill, index) => (
                   <li key={index} className='tech-full'>
@@ -63,7 +77,7 @@ function Skills() {
             </div>
 
             <div>
-              <p className='pb-1'>
+              <p className='pb-1 font-semibold'>
                 Technologies I had a brief introduction to:
               </p>
               <ul className='flex flex-wrap gap-2 pt-2'>
@@ -76,7 +90,9 @@ function Skills() {
             </div>
 
             <div>
-              <p className='pb-1'>What I am learning at the moment:</p>
+              <p className='pb-1 font-semibold'>
+                What I am learning at the moment:
+              </p>
               <ul className='flex flex-wrap gap-2 pt-2'>
                 {skillsNow.map((skill, index) => (
                   <li key={index} className='tech-full'>
@@ -87,7 +103,7 @@ function Skills() {
             </div>
 
             <div>
-              <p className='pb-1'>
+              <p className='pb-1 font-semibold'>
                 What I am curious about and would like to explore in 2024:
               </p>
               <ul className='flex flex-wrap gap-2 pt-2'>

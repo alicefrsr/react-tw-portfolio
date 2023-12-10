@@ -86,7 +86,7 @@ function ProjectModal({ selectedProjectId, showModal, onClose }) {
                     href={project.demoURL}
                     target='_blank'
                     rel='noreferrer'
-                    className='rounded-md border-2 border-current py-1 px-2 flex gap-2 hover:text-teal-500 duration-300'
+                    className='rounded-md border-2 border-current py-1 px-2 flex gap-2 hover:text-teal-500 dark:hover:text-teal-300 duration-300'
                   >
                     <LuExternalLink size={25} title='External link' />
                     Live demo
@@ -97,7 +97,7 @@ function ProjectModal({ selectedProjectId, showModal, onClose }) {
                     href={project.codeURL}
                     target='_blank'
                     rel='noreferrer'
-                    className='rounded-md border-2 border-current py-1 px-2 flex gap-2 hover:text-teal-500 duration-300'
+                    className='rounded-md border-2 border-current py-1 px-2 flex gap-2 hover:text-teal-500  dark:hover:text-teal-300 duration-300'
                   >
                     <FaGithub size={25} title='Github' />
                     View code

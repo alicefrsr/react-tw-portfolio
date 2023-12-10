@@ -10,7 +10,6 @@
 
 html {
   scroll-behavior: smooth;
-  /* scroll-padding-top: 4rem; */
 }
 
 * {
@@ -31,24 +30,24 @@ html {
 }
 
 .nav-link {
-  @apply uppercase text-base font-semibold px-2 py-1 hover:text-teal-500 duration-300 tracking-wide  active:text-teal-500  focus:text-teal-500;
+  @apply uppercase text-base font-semibold px-2 py-1 hover:text-teal-500 duration-300 tracking-wide  active:text-teal-300  focus:text-teal-300 dark:hover:text-teal-300;
 }
 
 .subtitle {
-  @apply pb-8 text-sm font-semibold uppercase tracking-widest;
+  @apply text-sm font-semibold uppercase tracking-widest;
 }
 
 .btn {
-  @apply flex items-center py-2 px-4 uppercase bg-slate-100 border-2 rounded-md border-current shadow-md shadow-slate-400
-  ease-in duration-300 hover:cursor-pointer  dark:bg-blueDarkest  dark:shadow-blueDarkest;
+  @apply flex items-center py-2 px-4 uppercase bg-slate-100 border-2 rounded-md border-current shadow-sm shadow-slate-400
+  ease-in duration-300 hover:cursor-pointer  dark:bg-blueDarkest  dark:shadow-blueDarkest dark:hover:text-teal-300 dark:hover:border-teal-300 dark:hover:shadow-teal-300;
 }
 
 .btn-filter {
-  @apply font-dm px-2 py-1 text-base font-semibold hover:text-teal-500 tracking-wide border-2 border-transparent rounded-sm duration-300;
+  @apply font-dm px-2 py-1 text-base hover:text-teal-500 dark:hover:text-teal-300 tracking-wide border-2 border-transparent rounded-sm duration-300;
 }
 
 .active-filter {
-  @apply text-teal-500 bg-slate-100 dark:bg-blueDarkest;
+  @apply text-teal-500 bg-slate-100 dark:bg-blueDarkest dark:text-teal-300;
 }
 
 .tech-full {
@@ -57,6 +56,10 @@ html {
 
 .tech-outline {
   @apply border-2 border-slate-200 rounded-sm px-2 py-1 font-dm  dark:border-blueDarkest;
+}
+
+.lang-outline {
+  @apply border-2   border-teal-500 dark:border-teal-300 rounded-sm px-2 py-1 font-dm;
 }
 
 .active-modal {

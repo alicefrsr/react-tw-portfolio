@@ -3,7 +3,6 @@ import { useNavigate } from 'react-router-dom';
 import projectsData from '../assets/data/projectsData';
 import { useState, useEffect } from 'react';
 import ProjectModal from './ProjectModal';
-import { motion, AnimatePresence } from 'framer-motion';
 
 // filter buttons: list of categories we want to match against
 let filters = [
@@ -89,20 +88,13 @@ function Projects() {
         </div>
 
         {/* Project cards */}
-        <motion.ul
-          layout
-          className='grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 lg:gap-16 mt-20  '
-        >
+        <ul className='flex gap-12 items-center flex-wrap mt-20 sm:justify-between sm:gap-10 lg:justify-start '>
           {/* Project card */}
           {/* {projects?.slice(0, nextItems)?.map((project, index) => ( */}
           {projects?.map((project, index) => (
-            <motion.li
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              // exit={{ opacity: 0 }}
-              transition={{ duration: 0.5 }}
+            <li
               key={index}
-              className='group w-full relative z-[1]'
+              className='group max-w-full sm:w-[46.5%] lg:w-[30.5%] relative z-[1]'
               onClick={() => showModalHandler(project.id)}
               // onClick={() => setShowModal(true)}
             >
@@ -127,9 +119,9 @@ function Projects() {
                 </div> */}
                 </div>
               </a>
-            </motion.li>
+            </li>
           ))}
-        </motion.ul>
+        </ul>
       </div>{' '}
       {/* load-more btn */}
       {/* <div className='flex justify-center mt-12 text-sm sm:text-base '>

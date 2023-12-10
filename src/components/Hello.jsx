@@ -16,7 +16,7 @@ const Hello = () => {
           <h1 className='text-3xl sm:text-4xl pb-4 font-dancing tracking-wide'>
             Hello, I&#39;m <span className='text-5xl sm:text-6xl '>Anne.</span>
           </h1>
-          <h2 className='subtitle  text-slate-400 dark:text-teal-500 '>
+          <h2 className='subtitle pb-12 text-slate-400 dark:text-teal-300 '>
             Web Developer
           </h2>
         </div>
@@ -24,9 +24,9 @@ const Hello = () => {
         <div className='flex flex-col gap-3'>
           <p className=''>
             This site showcases some of the things I&#39;ve built while learning
-            how to code. As an aspiring professional developer, I&#39;m
-            currently focused on building responsive and accessible web apps
-            with <span className='tech'> React</span> and{' '}
+            how to code. As a self-taught and aspiring professional developer,
+            I&#39;m currently focused on building responsive and accessible web
+            apps with <span className='tech'> React</span> and{' '}
             <span className='tech'> Tailwind</span> to improve my front-end
             skills, as well as integrating back-end technologies.
           </p>
