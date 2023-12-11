@@ -1,11 +1,13 @@
 import omnifoodImg from '../images/projects/omnifood.png';
 import guessImg from '../images/projects/guess.png';
 import splitterImg from '../images/projects/splitter.png';
-import manageImg from '../images/projects/manage.png';
 import devfinderImg from '../images/projects/devfinder.png';
+import pizzaImg from '../images/projects/pizzaApp.png';
+import quizImg from '../images/projects/quiz.png';
 import todoappImg from '../images/projects/todoapp.png';
+import manageImg from '../images/projects/manage.png';
 import expensetrackerImg from '../images/projects/expensetracker.png';
-import proshopProductScreenImg from '../images/projects/proshopProductScreen.png';
+import proshopImg from '../images/projects/proshop-product.png';
 
 const projectsData = [
   {
@@ -14,8 +16,8 @@ const projectsData = [
     // imageURL: '../assets/images/projects/omnifood.png',
     imageURL: omnifoodImg,
     title: 'Omnifood',
-    desc: 'Static website showcasing a food delivery company, from my first tutorial with HTML and CSS. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla incidunt optio, praesentium doloribus pariatur saepe sint debitis veniam qui quod? Eandae totam numquam aspernatur?',
-    tech: ['HTML', 'responsive CSS', 'Vanilla JS'],
+    desc: 'Static website showcasing a food delivery company.',
+    tech: ['HTML', 'Responsive CSS', 'Vanilla JS'],
     other: '',
     demoURL: 'https://food-ai-demo.netlify.app/',
     codeURL: 'https://github.com/alicefrsr/Omnifood',
@@ -44,9 +46,9 @@ const projectsData = [
     // imageURL: '../assets/images/projects/splitter.png ',
     imageURL: splitterImg,
     title: 'Splitter',
-    desc: 'Tip calculator / bill splitter app. My first dab at making something with Javascript without following a tutorial,, also to practice flexbox. Frontend Mentor challenge, with CSS changes for accessibility.',
-    tech: ['HTML', 'responsive CSS', 'Vanilla JS'],
-    other: '(Frontend Mentor challenge with CSS changes for accessibility).',
+    desc: 'Tip calculator / bill splitter app. My first dab at making something with Javascript without following a tutorial and to learn flexbox. Frontend Mentor challenge, with CSS changes for accessibility.',
+    tech: ['HTML', 'Responsive CSS', 'Vanilla JS'],
+    other: '',
     demoURL: 'https://splitter-demo.netlify.app/',
     codeURL: 'https://github.com/alicefrsr/Splitter',
     categories: ['Vanilla JS', 'HTML/CSS Integration'],
@@ -58,9 +60,9 @@ const projectsData = [
     // imageURL: '../assets/images/projects/manage.png ',
     imageURL: manageImg,
     title: 'Manage',
-    desc: 'Static website. Built to learn Tailwind.',
-    tech: ['HTML', 'responsive CSS', 'Tailwindcss'],
-    other: '(Frontend Mentor challenge).',
+    desc: 'Static website built to learn Tailwind. (Frontend Mentor challenge).',
+    tech: ['HTML', 'Responsive CSS', 'Tailwindcss'],
+    other: '',
     demoURL: 'https://thriving-sfogliatella-1cde36.netlify.app/',
     codeURL: 'https://github.com/alicefrsr/CSS-integration-tailwindcss',
     categories: ['HTML/CSS Integration'],
@@ -73,7 +75,7 @@ const projectsData = [
     imageURL: devfinderImg,
     title: 'Devfinder',
     desc: 'A simple React app to search for Github users information. A Frontend Mentor challenge to test my CSS skills and implement dark/light mode using the Context API.',
-    tech: ['React', 'context API', 'responsive', 'Github API'],
+    tech: ['React', 'Context API', 'Responsive CSS', 'Github API'],
     other: '',
     demoURL: 'https://devfinder-demo.netlify.app/',
     codeURL: 'https://github.com/alicefrsr/React-devfinder-App',
@@ -86,9 +88,9 @@ const projectsData = [
     urlName: 'todo-app',
     // imageURL: '../assets/images/projects/todoapp.png ',
     imageURL: todoappImg,
-    title: 'Todo app',
-    desc: "React app to add, edit, delete todos, saved to local storage. Improved over time as I used it to practice the Context API, useReducer, implement customs hooks. I made another version later using the MERN stack, I'll spare you yet another todo App, but feel free to check my Github.",
-    tech: ['React:', 'context API', 'useReducer', 'custom hooks'],
+    title: 'To-do app',
+    desc: 'React app to add, edit, delete todos, saved to local storage. Improved over time as I used it to practice the Context API, useReducer, implement customs hooks. Feel free to check my Github for another version using the MERN stack.',
+    tech: ['React:', 'Context API', 'useReducer', 'Custom hooks'],
     other: '',
     demoURL: 'https://another-todoapp.netlify.app/',
     codeURL: 'https://github.com/alicefrsr/React-todoApp',
@@ -98,11 +100,41 @@ const projectsData = [
   },
   {
     id: 7,
+    urlName: 'pizza-app',
+    // imageURL: '../assets/images/projects/todoapp.png ',
+    imageURL: pizzaImg,
+    title: 'Pizza app',
+    desc: "React app to order pizzas from Chiara's pizza place. Features include adding and removing pizza to cart, using geolocation to input address for delivery, viewing orders.",
+    tech: ['React', 'React Router', 'Redux Toolkit', 'Tailwindcss'],
+    other: '',
+    demoURL: 'https://chiaras-pizza.netlify.app/',
+    codeURL: 'https://github.com/alicefrsr/react-router-pizza',
+    categories: ['React'],
+    // category: 'React',
+    siteURL: '',
+  },
+  {
+    id: 8,
+    urlName: 'quiz-app',
+    // imageURL: '../assets/images/projects/todoapp.png ',
+    imageURL: quizImg,
+    title: 'Quiz app',
+    desc: 'React quiz. Features include a timer, an exit button to cancel, a restart button. A highscore is saved each time and updated if latest score is higher than previous highscore. I used Express to practice setting up a server but the questions are all on one js file within the project.',
+    tech: ['React', 'Context API', 'Express', 'Vercel'],
+    other: '',
+    demoURL: 'https://react-quiz-6l23.vercel.app/',
+    codeURL: 'https://github.com/alicefrsr/react-quiz',
+    categories: ['React'],
+    // category: 'React',
+    siteURL: '',
+  },
+  {
+    id: 9,
     urlName: 'expensetracker-app',
     // imageURL: '../assets/images/projects/expensetracker.png',
     imageURL: expensetrackerImg,
-    title: 'Expensetracker app',
-    desc: 'Simple budget App to add and delete income and expenses.',
+    title: 'Expense-tracker app',
+    desc: 'Simple budget App to add and delete income and expenses, using the MERN stack. Deployed on render.com, be patient when loading the live demo!',
     tech: ['React', 'Express', 'MongoDB'],
     other: '',
     demoURL: 'https://expense-tracker-app-9kw2.onrender.com',
@@ -112,12 +144,12 @@ const projectsData = [
     siteURL: '',
   },
   {
-    id: 8,
+    id: 10,
     urlName: 'e-commerce',
     // imageURL: '../assets/images/projects/proshopProductScreen.png',
-    imageURL: proshopProductScreenImg,
+    imageURL: proshopImg,
     title: 'e-commerce',
-    desc: "Fullstack e-commerce platform, following Brad Traversy's Udemy tutorial, to further consolidate my Redux skills. A good exposure to authentification with JWT, PayPal & Credit card integration.",
+    desc: "Fullstack e-commerce platform, following Brad Traversy's Udemy tutorial, to further consolidate my Redux skills and all CRUD operations on a database. A good exposure to authentification with JWT, PayPal & Credit card integration. Deployed on render.com, be patient when loading the live demo!",
     tech: ['React', 'Bootstrap', 'Redux', 'Express', 'MongoDB'],
     other: '',
     demoURL: 'https://e-commerce-demo-proshop.onrender.com',

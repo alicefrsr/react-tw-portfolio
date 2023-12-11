@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import projectsData from '../assets/data/projectsData';
 import { useState, useEffect } from 'react';
 import ProjectModal from './ProjectModal';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion } from 'framer-motion';
 
 // filter buttons: list of categories we want to match against
 let filters = [
@@ -97,7 +97,6 @@ function Projects() {
               layout
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
-              // exit={{ opacity: 0 }}
               transition={{ duration: 0.5 }}
               key={index}
               className='group w-full relative z-[1]'
@@ -107,7 +106,7 @@ function Projects() {
               <a href={`#project-modal=?${project.urlName}`}>
                 <figure className=''>
                   <img
-                    className='rounded-[9px] shadow-lg shadow-slate-300 dark:shadow-blueDarkest  group-hover:translate-x-1 group-hover:-translate-y-1 ease-in duration-200'
+                    className='rounded-[9px] shadow-lg shadow-slate-300 dark:shadow-blueDarkest group-hover:translate-x-1 group-hover:-translate-y-1 group-hover:shadow-teal-600  ease-in duration-200'
                     src={project.imageURL}
                     alt={project.title}
                   />
@@ -115,14 +114,14 @@ function Projects() {
 
                 {/* Project card overlay for hover effect */}
                 <div className=' rounded-[9px] w-full h-full bg-teal-400 bg-opacity-40 absolute top-0 left-0 z-[1] hidden group-hover:block group-hover:translate-x-3 group-hover:-translate-y-3 ease-in duration-200 '>
-                  {/* <div className='w-full h-full flex items-center justify-center '>
-                  <button
-                    className='btn'
-                    onClick={() => showModalHandler(project.id)}
-                  >
-                    See details
-                  </button>
-                </div> */}
+                  <div className='w-full h-full flex items-center justify-center duration-300 '>
+                    <button
+                      className='btn text-teal-600 border-teal-600  dark:text-teal-300 dark:border-teal-300 '
+                      onClick={() => showModalHandler(project.id)}
+                    >
+                      {project.title}
+                    </button>
+                  </div>
                 </div>
               </a>
             </motion.li>

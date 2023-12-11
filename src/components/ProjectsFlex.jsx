@@ -2,7 +2,7 @@ import { useNavigate } from 'react-router-dom';
 
 import projectsData from '../assets/data/projectsData';
 import { useState, useEffect } from 'react';
-import ProjectModal from './ProjectModal';
+import ProjectModal from './ProjectModalNoScroll';
 
 // filter buttons: list of categories we want to match against
 let filters = [

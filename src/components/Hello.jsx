@@ -33,9 +33,9 @@ const Hello = () => {
         >
           <p className=''>
             This site showcases some of the things I&#39;ve built while learning
-            how to code. As a self-taught and aspiring professional developer,
-            I&#39;m currently focused on building responsive and accessible web
-            apps with <span className='tech'> React</span> and{' '}
+            how to code. As a self-taught developer, I&#39;m currently focused
+            on building responsive and accessible web apps with{' '}
+            <span className='tech'> React</span> and{' '}
             <span className='tech'> Tailwind</span> to improve my front-end
             skills, as well as integrating back-end technologies.
           </p>
@@ -54,7 +54,7 @@ const Hello = () => {
         >
           {/* Link to projects */}
           <a href='#projects'>
-            <button className='group btn hover:shadow-teal-600  hover:border-teal-600  hover:text-teal-600'>
+            <button className='group btn border-current shadow-sm  shadow-slate-400 dark:hover:text-teal-300 dark:hover:border-teal-300 dark:hover:shadow-teal-300 hover:cursor-pointer   hover:shadow-teal-600  hover:border-teal-600  hover:text-teal-600'>
               <span className='group-hover:rotate-90 duration-200'>
                 <HiArrowNarrowRight />
               </span>

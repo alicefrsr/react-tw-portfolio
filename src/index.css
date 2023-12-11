@@ -46,8 +46,8 @@ html {
 }
 
 .btn {
-  @apply flex items-center py-2 px-4 uppercase bg-slate-100 border-2 rounded-md border-current shadow-sm shadow-slate-400
-  ease-in duration-300 hover:cursor-pointer  dark:bg-blueDarkest  dark:shadow-blueDarkest dark:hover:text-teal-300 dark:hover:border-teal-300 dark:hover:shadow-teal-300;
+  @apply flex items-center py-2 px-4 uppercase bg-slate-100 border-2 rounded-md 
+  ease-in duration-300  dark:bg-blueDarkest  dark:shadow-blueDarkest;
 }
 
 .btn-filter {
@@ -67,11 +67,15 @@ html {
 }
 
 .lang-outline {
-  @apply border-2   border-teal-500 dark:border-teal-300 rounded-sm px-2 py-1 font-dm;
+  @apply border-2 border-blueDark dark:border-slate-200 rounded-sm px-2 py-1 font-dm;
 }
 
 .active-modal {
   overflow-y: hidden;
+}
+
+.btn-modal {
+  @apply rounded-md border-2 border-current py-1 px-2 flex gap-2 hover:text-teal-600 dark:hover:text-teal-500 duration-300;
 }
 
 .fit {

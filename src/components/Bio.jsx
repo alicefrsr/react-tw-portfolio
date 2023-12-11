@@ -1,3 +1,5 @@
+import { motion } from 'framer-motion';
+
 function Bio() {
   return (
     <section id='bio' className='pt-24 mb-20 tracking-wide '>
@@ -7,9 +9,14 @@ function Bio() {
 
         {/* bio -- left-aligned */}
         <div className='flex flex-col gap-3 flex-1 '>
-          <h3 className='subtitle pb-12 text-teal-600  dark:text-teal-300 '>
+          <motion.h3
+            initial={{ x: -500, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            transition={{ duration: 1, ease: 'easeInOut' }}
+            className='subtitle pb-12 text-teal-600  dark:text-teal-300 '
+          >
             Bio
-          </h3>
+          </motion.h3>
           <p>
             In a previous life I was a{' '}
             <span className='jobtitle'>film editor</span> based in London for 20

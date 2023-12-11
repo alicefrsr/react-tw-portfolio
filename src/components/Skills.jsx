@@ -13,6 +13,7 @@ let skills = [
   'React-Router',
   'Bootstrap',
   'Tailwindcss',
+  'CSS Modules',
   'Redux',
   'Tanstack Query',
   'RESTful APIs',
