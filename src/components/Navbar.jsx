@@ -1,10 +1,12 @@
-import { FaTimes, FaGithub, FaLinkedin } from 'react-icons/fa';
-import { IoMenu, IoSunny, IoMoon } from 'react-icons/io5';
-import { GrLanguage } from 'react-icons/gr';
-// import { HiOutlineGlobeAlt, HiOutlineMoon, HiOutlineSun} from 'react-icons/hi2';
-import { motion } from 'framer-motion';
+import { FaTimes } from 'react-icons/fa';
+import {
+  IoMenu,
+  IoLogoLinkedin,
+  IoLogoGithub,
+  IoSunny,
+  IoMoon,
+} from 'react-icons/io5';
 
-// import { Link } from 'react-scroll';
 import { useState } from 'react';
 import useDarkMode from '../hooks/useDarkMode';
 
@@ -20,8 +22,8 @@ const Navbar = () => {
   return (
     <nav className='z-[3] fixed w-full h-16 flex justify-between items-center bg-slate-100 dark:bg-blueDarkest text-lg px-6 shadow-lg'>
       {/* Logo, --left-aligned */}
-      <a href='#hello'>
-        <span className='w-[30px] h-[30px] md:w-[40px] md:h-[40px] bg-transparent border-2 border-current text-[18px] font-[500] rounded-full flex items-center justify-center hover:text-teal-600  dark:hover:text-teal-500 duration-300'>
+      <a href='#hello' className='icon-link'>
+        <span className='rounded-full w-[35px] h-[35px] md:w-[40px] md:h-[40px] bg-transparent border-2 border-current text-xl font-[500] font-dancing  flex items-center justify-center duration-300'>
           A
         </span>
       </a>
@@ -30,7 +32,7 @@ const Navbar = () => {
       <ul className='hidden md:flex items-center gap-8 md:ml-28'>
         {navlinks.map((navlink, index) => (
           <li key={index}>
-            <a href={`#${navlink}`} className='nav-link'>
+            <a href={`#${navlink}`} className='text-base nav-link link'>
               {navlink}
             </a>
           </li>
@@ -39,18 +41,22 @@ const Navbar = () => {
 
       {/* Mobile menu button / Hamburger or X icon --centered */}
       <button
-        className='md:hidden p-1 z-10  hover:text-teal-600 dark:hover:text-teal-500 active:rotate-180 duration-300'
+        className='md:hidden p-1 z-10 active:rotate-180 duration-300 link'
         onClick={toggleMobileNav}
       >
-        {!openMobileNav ? <IoMenu size={25} /> : <FaTimes />}
+        {!openMobileNav ? (
+          <IoMenu size={25} />
+        ) : (
+          <FaTimes size={25} className='p-1' />
+        )}
       </button>
 
       {/* Mobile menu */}
       <ul
         className={
           !openMobileNav
-            ? `mobile-nav w-0 left-[-10rem]  `
-            : `mobile-nav w-[50%] left-0  `
+            ? `mobile-nav w-0 left-[-10rem]`
+            : `mobile-nav w-[50%] left-0`
         }
       >
         {mobileNavlinks.map((navlink, index) => (
@@ -58,7 +64,7 @@ const Navbar = () => {
             <a
               onClick={toggleMobileNav}
               href={`#${navlink}`}
-              className='p-2 font-semibold text-md hover:text-teal-600   dark:hover:text-teal-500'
+              className='text-sm nav-link link'
             >
               {navlink}
             </a>
@@ -70,19 +76,19 @@ const Navbar = () => {
       <div className='flex items-center'>
         {/* Socials icons */}
         <ul className='flex gap-4 border-r-2 border-current px-4'>
-          <li className='hover:text-teal-600  dark:hover:text-teal-500 duration-300'>
-            <a href='/' className=''>
-              <FaLinkedin size={25} />
+          {/* <li className='duration-300'>
+            <a href='/' className='link'>
+              <IoLogoLinkedin size={30} />
             </a>
-          </li>
-          <li className='hover:text-teal-600  dark:hover:text-teal-500 duration-300'>
+          </li> */}
+          <li className=''>
             <a
               href='https://github.com/alicefrsr'
               target='_blank'
               rel='noreferrer'
-              className=''
+              className=' icon-link'
             >
-              <FaGithub size={25} />
+              <IoLogoGithub size={28} />
             </a>
           </li>
         </ul>
@@ -90,7 +96,7 @@ const Navbar = () => {
         {/* Later... */}
         {/* Dark mode toggle */}
         <button
-          className='px-4 hover:text-yellow-400 dark:hover:text-yellow-400  active:rotate-[360deg] duration-300'
+          className='ml-4 h-8 w-8 rounded-full moonsun px-1 focus:outline-none outline-offset-4 '
           onClick={toggle}
         >
           {darkModeEnabled ? <IoSunny size={25} /> : <IoMoon size={25} />}

@@ -73,6 +73,12 @@ function Projects() {
       {/* Container */}
       <div className='projects-container mx-auto'>
         <h3 className='font-semibold text-[2rem] ] mb-8 '>Projects</h3>
+        <p className='pb-24'>
+          Please bear in mind if your are browsing this portfolio on your mobile
+          device, not all these projects are responsive. Sometimes it wasn&#39;t
+          the focus of the app, as I used each one of these as a pretext to
+          learn and practice a specific technology.
+        </p>
         {/* Filter buttons */}
         <div className='flex gap-3 justify-center items-center flex-wrap '>
           {filters.map((category) => (
@@ -99,11 +105,14 @@ function Projects() {
               animate={{ opacity: 1 }}
               transition={{ duration: 0.5 }}
               key={index}
-              className='group w-full relative z-[1]'
+              className='group w-full relative z-[1] '
               onClick={() => showModalHandler(project.id)}
               // onClick={() => setShowModal(true)}
             >
-              <a href={`#project-modal=?${project.urlName}`}>
+              <a
+                href={`#project-modal=?${project.urlName}`}
+                className='rounded-[9px] outline-teal-600 outline-offset-4  hover:outline-none  dark:focus:outline-teal-300'
+              >
                 <figure className=''>
                   <img
                     className='rounded-[9px] shadow-lg shadow-slate-300 dark:shadow-blueDarkest group-hover:translate-x-1 group-hover:-translate-y-1 group-hover:shadow-teal-600  ease-in duration-200'
@@ -113,14 +122,11 @@ function Projects() {
                 </figure>
 
                 {/* Project card overlay for hover effect */}
-                <div className=' rounded-[9px] w-full h-full bg-teal-400 bg-opacity-40 absolute top-0 left-0 z-[1] hidden group-hover:block group-hover:translate-x-3 group-hover:-translate-y-3 ease-in duration-200 '>
+                <div className='rounded-[9px] w-full h-full bg-teal-400 bg-opacity-40 absolute top-0 left-0 z-[1] hidden group-hover:block group-hover:translate-x-3 group-hover:-translate-y-3 ease-in duration-200 '>
                   <div className='w-full h-full flex items-center justify-center duration-300 '>
-                    <button
-                      className='btn text-teal-600 border-teal-600  dark:text-teal-300 dark:border-teal-300 '
-                      onClick={() => showModalHandler(project.id)}
-                    >
+                    <div className='btn text-teal-600 border-teal-600  dark:text-teal-300 dark:border-teal-300 '>
                       {project.title}
-                    </button>
+                    </div>
                   </div>
                 </div>
               </a>

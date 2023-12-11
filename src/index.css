@@ -4,7 +4,27 @@
 
 @layer base {
   body {
-    @apply font-[Inter] bg-white text-blueDark dark:text-slate-200 dark:bg-blueDark;
+    @apply font-[Inter] bg-white text-blueDark 
+   dark:text-slate-200
+    dark:outline-teal-300 dark:bg-blueDark;
+  }
+}
+
+@layer utilities {
+  .boxshadow-light {
+    box-shadow: 0 0 5px #f1ebd4, 0 0 25px #f1ebd4, 0 0 50px #fbbf24, 0 0 100px;
+  }
+  .boxshadow-dark {
+    box-shadow: 0 0 5px #7e6e30, 0 0 25px #fbbf24, 0 0 50px #fbbf24, 0 0 100px;
+  }
+
+  .moonsun {
+    @apply text-blueDark dark:text-slate-200;
+  }
+
+  .moonsun:hover,
+  .moonsun:focus {
+    @apply text-yellow-400 bg-[#f1ebd4] boxshadow-light dark:bg-[#7e6e30] dark:boxshadow-dark active:rotate-[360deg] duration-300;
   }
 }
 
@@ -22,7 +42,6 @@ html {
   max-width: 1170px;
   padding-left: 2rem;
   padding-right: 2rem;
-  /* margin: auto; */
 }
 
 .bio-container {
@@ -30,11 +49,30 @@ html {
 }
 
 .nav-link {
-  @apply uppercase text-base font-semibold px-2 py-1 hover:text-teal-600  dark:hover:text-teal-500 duration-300 tracking-wide  active:text-teal-300  focus:text-teal-300;
+  @apply tracking-wide uppercase   font-semibold px-2 py-1;
+}
+
+/*  focus:ring focus:ring-yellow-400 md:px-6 md:py-3 */
+.link {
+  @apply duration-300 rounded-sm
+outline-teal-600 
+outline-offset-4 dark:outline-offset-4
+ hover:text-teal-600 active:text-teal-600 
+ focus:text-teal-600 
+ dark:hover:text-teal-300  dark:active:text-teal-300  dark:focus:text-teal-300
+   dark:focus:outline-teal-300;
+}
+
+.icon-link {
+  @apply duration-300 rounded-full
+   outline-offset-4 outline-teal-600 
+ hover:text-teal-600  active:text-teal-600 
+  focus:text-teal-600
+ dark:hover:text-teal-300  dark:active:text-teal-300  dark:focus:text-teal-300;
 }
 
 .mobile-nav {
-  @apply absolute top-0 h-screen bg-slate-100 opacity-90 flex flex-col justify-center items-center uppercase dark:bg-blueDarkest duration-500;
+  @apply absolute top-0 h-screen bg-slate-100 opacity-90 flex flex-col justify-center items-center dark:bg-blueDarkest duration-500;
 }
 
 .subtitle {
@@ -42,20 +80,31 @@ html {
 }
 
 .jobtitle {
-  @apply text-sm font-semibold uppercase tracking-wide text-teal-600  dark:text-teal-300;
+  @apply text-sm font-semibold uppercase text-teal-600  dark:text-teal-300;
 }
 
 .btn {
   @apply flex items-center py-2 px-4 uppercase bg-slate-100 border-2 rounded-md 
-  ease-in duration-300  dark:bg-blueDarkest  dark:shadow-blueDarkest;
+  ease-in duration-200  dark:bg-blueDarkest  dark:shadow-blueDarkest;
 }
 
 .btn-filter {
-  @apply font-dm px-2 py-1 text-base hover:text-teal-600  dark:hover:text-teal-300 tracking-wide border-2 border-transparent rounded-sm duration-300;
+  @apply duration-300 font-dm px-2 py-1 text-base  tracking-wide border-2 border-transparent rounded-sm outline-4  
+  outline-teal-600
+  hover:text-teal-600 
+  focus:text-teal-600 
+  
+  dark:outline-none
+  dark:hover:text-teal-300 
+  dark:focus:text-teal-300  dark:focus:outline-teal-300;
 }
 
 .active-filter {
   @apply text-teal-600 dark:text-teal-300  bg-slate-100 dark:bg-blueDarkest;
+}
+
+.glow {
+  box-shadow: 0 0 40px rgb(251 191 36);
 }
 
 .tech-full {
@@ -75,7 +124,7 @@ html {
 }
 
 .btn-modal {
-  @apply rounded-md border-2 border-current py-1 px-2 flex gap-2 hover:text-teal-600 dark:hover:text-teal-500 duration-300;
+  @apply rounded-md border-2 border-current py-1 px-2 flex gap-2 duration-300 hover:text-teal-600 dark:hover:text-teal-300;
 }
 
 .fit {

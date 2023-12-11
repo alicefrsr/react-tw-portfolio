@@ -31,6 +31,7 @@ const skillsLevel1 = [
   'Eclipse',
   'Swift',
   'SwiftUI',
+  'XCode',
   'Python',
   'Styled Components',
 ];

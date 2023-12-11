@@ -47,14 +47,14 @@ function ProjectModal({ selectedProjectId, showModal, onClose }) {
           role='dialog'
           aria-modal='true'
           onClick={(e) => e.stopPropagation()} // option 1
-          className='w-[90%] md:max-w-[40rem] bg-white p-5 rounded-[9px] z-10 absolute  dark:bg-blueDark'
+          className='w-[90%] md:max-w-[30rem] bg-white p-5 rounded-[9px] z-10 absolute  dark:bg-blueDark'
         >
           <div>
             {/* Close button */}
             <button
               id='close-modal'
               onClick={() => onClose()}
-              className='absolute top-[1.7rem] right-[1.7rem] w-[1.8rem] h-[1.8rem] bg-white  text-[25px] flex items-center justify-center rounded-[3px] leading-0 hover:text-teal-600 duration-300  dark:text-blueDark dark:hover:text-teal-500'
+              className='absolute top-[1.7rem] right-[1.7rem] w-[1.8rem] h-[1.8rem] bg-white  text-[25px] flex items-center justify-center rounded-[3px] leading-0 duration-300  dark:text-blueDark link'
             >
               &times;
             </button>
@@ -86,7 +86,7 @@ function ProjectModal({ selectedProjectId, showModal, onClose }) {
                     href={project.demoURL}
                     target='_blank'
                     rel='noreferrer'
-                    className='btn-modal'
+                    className='btn-modal link'
                   >
                     <LuExternalLink size={25} title='External link' />
                     Live demo
@@ -97,7 +97,7 @@ function ProjectModal({ selectedProjectId, showModal, onClose }) {
                     href={project.codeURL}
                     target='_blank'
                     rel='noreferrer'
-                    className='btn-modal'
+                    className='btn-modal link'
                   >
                     <FaGithub size={25} title='Github' />
                     View code
