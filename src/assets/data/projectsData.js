@@ -1,4 +1,4 @@
-import omnifoodImg from '../images/projects/omnifood.png';
+// import omnifoodImg from '../images/projects/omnifood.png';
 import guessImg from '../images/projects/guess.png';
 import splitterImg from '../images/projects/splitter.png';
 import devfinderImg from '../images/projects/devfinder.png';
