@@ -20,23 +20,23 @@ let skills = [
   'Node.js',
   'Express',
   'MongoDB',
-  'Firebase',
   'Responsive',
   'Web accessibility',
+  'Deployment',
 ];
 const skillsLevel1 = [
   'Linux',
   'Windows',
   'Java',
-  'Eclipse',
   'Swift',
   'SwiftUI',
-  'XCode',
   'Python',
   'Styled Components',
+  'Supabase',
 ];
 const skillsNow = ['NextJS', 'Typescript', 'Python', 'Web accessibility'];
 const skillsToDo = [
+  'React Native',
   'Testing',
   'CI/CD',
   'Jest',
@@ -48,9 +48,9 @@ const languages = ['English', 'French', 'Spanish'];
 
 function Skills() {
   return (
-    <section id='skills' className='pt-20 lg:pt-0 tracking-wide '>
+    <section id='skills' className='pt-20 pb-12 lg:pt-16 tracking-wide '>
       {/* Container */}
-      <div className='lg:max-w-[58rem] sm:max-w-[60%] h-fit lg:h-screen px-6 mx-auto flex flex-col justify-center w-full '>
+      <div className='lg:max-w-[58rem] sm:max-w-[70%] h-fit lg:h-screen px-6 mx-auto flex flex-col justify-center w-full '>
         {/* <h3 className='text-[2rem] font-[700] mb-8'>Skills</h3> */}
 
         {/* skills */}

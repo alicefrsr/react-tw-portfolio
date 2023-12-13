@@ -12,6 +12,7 @@ let filters = [
   'Vanilla JS',
   'React',
   'Full Stack',
+  'Professional',
 ];
 
 function Projects() {
@@ -74,11 +75,11 @@ function Projects() {
       <div className='projects-container mx-auto'>
         <h3 className='font-semibold text-[2rem] ] mb-8 '>Projects</h3>
         <p className='pb-24'>
-          Please bear in mind if your are browsing this portfolio on your mobile
-          device, not all these projects are responsive. Sometimes it wasn&#39;t
-          the focus of the app, as I used each one of these as a pretext to
-          learn and practice a specific technology.
+          Please note: if your are viewing this portfolio on a mobile device,
+          not all these projects are responsive! You can check the tech stack to
+          see which ones are.
         </p>
+
         {/* Filter buttons */}
         <div className='flex gap-3 justify-center items-center flex-wrap '>
           {filters.map((category) => (

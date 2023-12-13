@@ -20,10 +20,10 @@ const Navbar = () => {
   };
 
   return (
-    <nav className='z-[3] fixed w-full h-16 flex justify-between items-center bg-slate-100 dark:bg-blueDarkest text-lg px-6 shadow-lg'>
+    <nav className='z-[3] fixed w-full h-16 flex justify-between items-center bg-slate-100 dark:bg-blueDarkest opacity-90 text-lg px-6 shadow-lg'>
       {/* Logo, --left-aligned */}
       <a href='#hello' className='icon-link'>
-        <span className='rounded-full w-[35px] h-[35px] md:w-[40px] md:h-[40px] bg-transparent border-2 border-current text-xl font-[500] font-dancing  flex items-center justify-center duration-300'>
+        <span className='rounded-full w-[35px] h-[35px] md:w-[40px] md:h-[40px] bg-transparent border-2 border-current text-xl font-[500] font-dancing  flex items-center justify-center'>
           A
         </span>
       </a>
@@ -64,7 +64,7 @@ const Navbar = () => {
             <a
               onClick={toggleMobileNav}
               href={`#${navlink}`}
-              className='text-sm nav-link link'
+              className='text-md font-bold nav-link link '
             >
               {navlink}
             </a>
@@ -76,11 +76,11 @@ const Navbar = () => {
       <div className='flex items-center'>
         {/* Socials icons */}
         <ul className='flex gap-4 border-r-2 border-current px-4'>
-          {/* <li className='duration-300'>
+          <li className='duration-300'>
             <a href='/' className='link'>
               <IoLogoLinkedin size={30} />
             </a>
-          </li> */}
+          </li>
           <li className=''>
             <a
               href='https://github.com/alicefrsr'
