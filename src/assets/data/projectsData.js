@@ -164,8 +164,8 @@ const projectsData = [
     desc: 'Landing page for a local restaurant in Aragon, Spain. Client requested a simple static page to have an online presence other than just Google reviews. Hosted on Hostinger using Github  repo for auto-deployment. Focus on SEO.',
     tech: ['HTML', 'Responsive CSS', 'Hostinger', 'Github'],
     other: '',
-    demoURL: '/coming-soon',
-    codeURL: 'https://github.com/alicefrsr/el-mirador-v2',
+    demoURL: 'Coming soon!',
+    codeURL: 'Private repo for now, coming soon!',
     categories: ['Professional'],
   },
 ];

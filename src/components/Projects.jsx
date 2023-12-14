@@ -112,7 +112,7 @@ function Projects() {
             >
               <a
                 href={`#project-modal=?${project.urlName}`}
-                className='rounded-[9px] outline-teal-600 outline-offset-4  hover:outline-none  dark:focus:outline-teal-300'
+                className='rounded-[9px] outline-teal-600 outline-offset-4 hover:outline-none dark:focus:outline-teal-300'
               >
                 <figure className=''>
                   <img
@@ -125,9 +125,9 @@ function Projects() {
                 {/* Project card overlay for hover effect */}
                 <div className='rounded-[9px] w-full h-full bg-teal-400 bg-opacity-40 absolute top-0 left-0 z-[1] hidden group-hover:block group-hover:translate-x-3 group-hover:-translate-y-3 ease-in duration-200 '>
                   <div className='w-full h-full flex items-center justify-center duration-300 '>
-                    <div className='btn text-teal-600 border-teal-600  dark:text-teal-300 dark:border-teal-300 '>
+                    <h4 className='btn text-teal-600 border-teal-600  dark:text-teal-300 dark:border-teal-300 '>
                       {project.title}
-                    </div>
+                    </h4>
                   </div>
                 </div>
               </a>

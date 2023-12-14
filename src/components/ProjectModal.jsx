@@ -13,7 +13,8 @@ function ProjectModal({ selectedProjectId, showModal, onClose }) {
   const project = projectsData.find(
     (project) => project.id === selectedProjectId
   );
-  // option 1: e.stopPropagation on modal container
+  // to close modal on outside click
+  // option 1: e.stopPropagation on modal container OR:
   // option 2: target overlay with an id, close only if matched
   const handleClose = (e) => {
     if (e.target.id === 'overlay') onClose();
@@ -46,21 +47,21 @@ function ProjectModal({ selectedProjectId, showModal, onClose }) {
           id='project-modal'
           role='dialog'
           aria-modal='true'
-          onClick={(e) => e.stopPropagation()} // option 1
+          // onClick={(e) => e.stopPropagation()} // option 1
           className='w-[90%] md:max-w-[30rem] top-[1rem] sm:top-[3rem] bg-white p-5 rounded-[9px] z-10 absolute  dark:bg-blueDark'
         >
           <div>
-            {/* Close button */}
+            {/* Close modal button */}
             <button
               id='close-modal'
               onClick={() => onClose()}
-              className='absolute top-[1.7rem] right-[1.7rem] w-[1.8rem] h-[1.8rem] bg-white  text-[25px] flex items-center justify-center rounded-[3px] leading-0 duration-300  dark:text-blueDark link'
+              className='absolute top-[1.7rem] right-[1.7rem] w-[1.8rem] h-[1.8rem] bg-white text-[25px] flex items-center justify-center rounded-[3px] leading-0 duration-300  dark:text-blueDark link'
             >
               &times;
             </button>
             <figure>
               <img
-                className='rounded-[9px] border-2 border-slate-200  dark:border-none'
+                className='rounded-[9px] border-2 border-slate-200 dark:border-none'
                 src={project.imageURL}
                 alt={project.title}
               />
@@ -80,7 +81,7 @@ function ProjectModal({ selectedProjectId, showModal, onClose }) {
                 ))}
               </ul>
               {/* External links */}
-              <div className='mt-8 flex gap-3 items-center justify-center sm:justify-start '>
+              <div className='mt-8 flex gap-3 items-center justify-center sm:justify-start'>
                 <ToolTip tooltip={`${project.demoURL}`}>
                   <a
                     href={project.demoURL}

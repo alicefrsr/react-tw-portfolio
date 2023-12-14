@@ -10,7 +10,7 @@ let skills = [
   'CSS3',
   'Javascript',
   'React',
-  'React-Router',
+  'React Router',
   'Bootstrap',
   'Tailwindcss',
   'CSS Modules',
@@ -22,7 +22,10 @@ let skills = [
   'MongoDB',
   'Responsive',
   'Web accessibility',
-  'Deployment',
+  'WCAG 2.1',
+  'Axe DevTools',
+  'axe Accessibility Linter',
+  'axe-core-react',
 ];
 const skillsLevel1 = [
   'Linux',

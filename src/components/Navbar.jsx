@@ -72,11 +72,11 @@ const Navbar = () => {
         ))}
       </ul>
 
-      {/* External links + btns, --right-aligned */}
+      {/* External links + darkmode btn, --right-aligned */}
       <div className='flex items-center'>
         {/* Socials icons */}
         <ul className='flex gap-4 border-r-2 border-current px-4'>
-          <li className='duration-300'>
+          <li className=''>
             <a href='/' className='link'>
               <IoLogoLinkedin size={30} />
             </a>
