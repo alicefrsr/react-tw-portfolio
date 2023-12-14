@@ -1,4 +1,3 @@
-// import omnifoodImg from '../images/projects/omnifood.png';
 import guessImg from '../images/projects/guess.png';
 import splitterImg from '../images/projects/splitter.png';
 import devfinderImg from '../images/projects/devfinder.png';
@@ -26,7 +25,7 @@ const projectsData = [
   {
     id: 1,
     urlName: 'guessing-game',
-    // imageURL: '../assets/images/projects/guess.png',
+    // imageURL: '../../../img/guess.png',
     imageURL: guessImg,
     title: 'Guessing game',
     desc: 'Guess The Number game, retro style. Try to guess a random number between 1 and 100 in as little rounds as possible and save your score. One of my very first projects while learning basic logic with Javascript.',
@@ -39,7 +38,7 @@ const projectsData = [
   {
     id: 2,
     urlName: 'splitter',
-    // imageURL: '../assets/images/projects/splitter.png ',
+    // imageURL: '../../../img/splitter.png ',
     imageURL: splitterImg,
     title: 'Splitter',
     desc: 'Tip calculator / bill splitter app. Enter the bill amount, number of people to split between and chose the tip, the app breaks down the total to pay per person. The focus was on learning Javascript, CSS Flexbox and Web accessibility. Frontend Mentor challenge, with CSS changes for accessibility.',
@@ -52,7 +51,7 @@ const projectsData = [
   {
     id: 3,
     urlName: 'devfinder',
-    // imageURL: '../assets/images/projects/devfinder.png',
+    // imageURL: '../../../img/devfinder.png',
     imageURL: devfinderImg,
     title: 'Devfinder',
     desc: 'A simple React app to search for Github users information using the Github API. A Frontend Mentor challenge to test my CSS skills, implement dark/light mode using the Context API.',
@@ -65,7 +64,7 @@ const projectsData = [
   {
     id: 4,
     urlName: 'todo-app',
-    // imageURL: '../assets/images/projects/todoapp.png ',
+    // imageURL: '../../../img/todoapp.png ',
     imageURL: todoappImg,
     title: 'To-do app',
     desc: 'Another to-do app! Because what would a portfolio be without one! Add, edit, delete your todos, saved to local storage. I improved it over time as I used it to practice the Context API, useReducer, how to implement customs hooks. Made another one using a MongoBD database but there are only so many todo apps you could bear to see, right? ',
@@ -78,10 +77,10 @@ const projectsData = [
   {
     id: 5,
     urlName: 'bits-and-bobs',
-    // imageURL: '../assets/images/projects/bitsbobs.png',
+    // imageURL: '../../../img/bitsbobs.png',
     imageURL: bitsbobsImg,
     title: 'Bits & Bobs',
-    desc: 'Personal learning website I use as my own private kitchen to test things when I started building things with React. I find it easier to learn new concepts in isolation. It started with 3 simple components and expanded as I went along.',
+    desc: 'Personal learning website I used as my own private kitchen to test new things with React. I find it easier to learn new concepts in isolation. It started with 3 simple components and expanded as I went along.',
     tech: [
       'React',
       'Custom hooks',
@@ -100,7 +99,7 @@ const projectsData = [
   {
     id: 6,
     urlName: 'quiz-app',
-    // imageURL: '../assets/images/projects/todoapp.png ',
+    // imageURL: '../../../img/quiz.png ',
     imageURL: quizImg,
     title: 'Quiz app',
     desc: 'React quiz built with React with 15 questions to test your knowledge ! Features include a timer, a cancel and a restart button. A highscore is saved each time and updated if your latest score is higher than your previous highscore. Deployed on Netlify, then on Vercel with an Express server just to test things out.',
@@ -113,7 +112,7 @@ const projectsData = [
   {
     id: 7,
     urlName: 'pizza-app',
-    // imageURL: '../assets/images/projects/todoapp.png ',
+    // imageURL: '../../../img/pizzaApp.png ',
     imageURL: pizzaImg,
     title: "Chiara's Pizza app",
     desc: "Order your pizzas from Chiara's pizza place. Add / remove pizzas to/from your cart, use geolocation to input address for delivery, search for orders. We'll tell you how long you have to wait and if you are really  hungry, you can set your order to priority, we'll speed up that order for you! ",
@@ -133,7 +132,7 @@ const projectsData = [
   {
     id: 8,
     urlName: 'expensetracker-app',
-    // imageURL: '../assets/images/projects/expensetracker.png',
+    // imageURL: '../../../img/expensetracker.png',
     imageURL: expensetrackerImg,
     title: 'Expense tracker app',
     desc: 'Simple budget App to add and delete income and expenses, using the MERN stack. (Deployed on render.com, so please be patient when loading the live demo...)',
@@ -146,7 +145,7 @@ const projectsData = [
   {
     id: 9,
     urlName: 'e-commerce',
-    // imageURL: '../assets/images/projects/proshopProductScreen.png',
+    // imageURL: '../../../img/proshop-product.png',
     imageURL: proshopImg,
     title: 'e-commerce',
     desc: "Fullstack e-commerce platform, following Brad Traversy's Udemy tutorial, to further consolidate my Redux skills and all CRUD operations on a database. A good exposure to authentification with JWT, PayPal & Credit card integration. (Deployed on render.com, so please be patient when loading the live demo !)",
@@ -159,7 +158,7 @@ const projectsData = [
   {
     id: 10,
     urlName: 'el-mirador',
-    // imageURL: '../assets/images/projects/proshopProductScreen.png',
+    // imageURL: '../../../img/el-mirador.png',
     imageURL: elMiradorImg,
     title: 'El Mirador',
     desc: 'Landing page for a local restaurant in Aragon, Spain. Client requested a simple static page to have an online presence other than just Google reviews. Hosted on Hostinger using Github  repo for auto-deployment. Focus on SEO.',

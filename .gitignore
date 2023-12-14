@@ -12,7 +12,8 @@ dist
 dist-ssr
 *.local
 # Images
-/src/assets/images
+# /src/assets/images
+/src/assets/images/skills
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json
