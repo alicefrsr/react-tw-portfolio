@@ -23,7 +23,7 @@ const Navbar = () => {
     <nav className='z-[3] fixed w-full h-16 flex justify-between items-center bg-slate-100 dark:bg-blueDarkest opacity-90 text-lg px-6 shadow-lg'>
       {/* Logo, --left-aligned */}
       <a href='#hello' className='icon-link'>
-        <span className='rounded-full w-[35px] h-[35px] md:w-[40px] md:h-[40px] bg-transparent border-2 border-current text-xl font-[500] font-dancing  flex items-center justify-center'>
+        <span className='rounded-full w-[35px] h-[35px] md:w-[40px] md:h-[40px] bg-transparent border-2 border-current text-xl font-[500] font-satisfy  flex items-center justify-center'>
           A
         </span>
       </a>

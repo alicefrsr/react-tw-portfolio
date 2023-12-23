@@ -18,6 +18,9 @@ export default {
         inter: 'Inter, sans-serif',
         dm: 'DM Mono, monospace',
         dancing: 'Dancing Script, cursive',
+        brush: 'Nanum Brush Script, sans-serif',
+        satisfy: 'Satisfy, cursive',
+        fira: 'Fira Code,monospace ',
       },
       colors: {
         primaryColor: '#242d52',

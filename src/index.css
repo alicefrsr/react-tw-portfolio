@@ -76,7 +76,7 @@ outline-offset-4 dark:outline-offset-4
 }
 
 .jobtitle {
-  @apply text-sm font-semibold uppercase text-teal-600  dark:text-teal-300;
+  @apply font-dm text-sm font-semibold uppercase text-teal-600  dark:text-teal-300;
 }
 .bio-subtitle {
   @apply text-sm font-semibold uppercase;
@@ -105,6 +105,10 @@ outline-offset-4 dark:outline-offset-4
 .glow {
   box-shadow: 0 0 40px rgb(251 191 36);
   box-shadow: 0 0 40px #5eead4;
+}
+
+.tech {
+  @apply font-dm text-lg tracking-tight;
 }
 
 .tech-full {

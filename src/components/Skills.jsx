@@ -58,14 +58,17 @@ function Skills() {
 
         {/* skills */}
         <div className='flex flex-col'>
-          <motion.h3
+          {/* <motion.h3
             initial={{ x: -500, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             transition={{ duration: 1, ease: 'easeInOut' }}
             className='subtitle pb-12 text-teal-600 dark:text-teal-300 '
           >
             Toolbox
-          </motion.h3>
+          </motion.h3> */}
+          <h3 className='font-semibold text-[3rem] font-satisfy mb-8 '>
+            Toolbox
+          </h3>
           <div className='flex flex-col flex-1 gap-10 '>
             <div>
               <p className='pb-1 font-semibold'>

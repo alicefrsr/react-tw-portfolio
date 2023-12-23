@@ -73,12 +73,16 @@ function Projects() {
     <section id='projects' className='h-fit pt-24 mb-16'>
       {/* Container */}
       <div className='projects-container mx-auto'>
-        <h3 className='font-semibold text-[2rem] ] mb-8 '>Projects</h3>
-        <p className='pb-24'>
-          Please note: if your are viewing this portfolio on a mobile device,
-          not all these projects are responsive! You can check the tech stack to
-          see which ones are.
-        </p>
+        <div className='lg:max-w-[58rem] sm:max-w-[70%] sm:px-6 pt-10 mx-auto flex flex-col w-full'>
+          <h3 className='font-semibold text-[3rem] font-satisfy mb-8 '>
+            Projects
+          </h3>
+          <p className='pb-24'>
+            Please note: if your are viewing this portfolio on a mobile device,
+            not all these projects are responsive! You can check the tech stack
+            to see which ones are.
+          </p>
+        </div>
 
         {/* Filter buttons */}
         <div className='flex gap-3 justify-center items-center flex-wrap '>

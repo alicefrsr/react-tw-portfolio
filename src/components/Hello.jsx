@@ -12,8 +12,8 @@ const Hello = () => {
           // transition={{ duration: 1, ease: 'easeInOut' }}
           className='text-2xl'
         >
-          <h1 className='text-3xl sm:text-4xl pb-4 font-dancing tracking-wide'>
-            Hello, I&#39;m <span className='text-5xl sm:text-6xl '>Anne.</span>
+          <h1 className='text-3xl sm:text-4xl pb-4 font-satisfy tracking-wide'>
+            Hello, I&#39;m <span className='text-5xl sm:text-6xl '>Anne</span>
           </h1>
           <h2 className='jobtitle pb-12 tracking-widest'>Junior Developer</h2>
         </motion.div>

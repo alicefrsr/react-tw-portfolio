@@ -9,14 +9,15 @@ function Bio() {
 
         {/* bio -- left-aligned */}
         <div className='flex flex-col gap-3 flex-1 '>
-          <motion.h3
+          {/* <motion.h3
             initial={{ x: -500, opacity: 0 }}
             animate={{ x: 0, opacity: 1 }}
             transition={{ duration: 1, ease: 'easeInOut' }}
             className='subtitle pb-12 text-teal-600  dark:text-teal-300 '
           >
             Bio
-          </motion.h3>
+          </motion.h3> */}
+          <h3 className='font-semibold text-[3rem] font-satisfy mb-8 '>Bio</h3>
           {/* <h4 className='italic'>
             From <span className='bio-subtitle'>film crew</span> to{' '}
             <span className='bio-subtitle'> yacht crew</span>...
