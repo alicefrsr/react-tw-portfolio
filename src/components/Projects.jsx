@@ -12,7 +12,7 @@ let filters = [
   'Vanilla JS',
   'React',
   'Full Stack',
-  'Professional',
+  // 'Professional',
 ];
 
 function Projects() {

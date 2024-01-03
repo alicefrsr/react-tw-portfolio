@@ -1,3 +1,4 @@
+import omnifoodImg from '../images/projects/omnifood.png';
 import guessImg from '../images/projects/guess.png';
 import splitterImg from '../images/projects/splitter.png';
 import devfinderImg from '../images/projects/devfinder.png';
@@ -7,21 +8,22 @@ import todoappImg from '../images/projects/todoapp.png';
 import bitsbobsImg from '../images/projects/bitsbobs.png';
 import expensetrackerImg from '../images/projects/expensetracker.png';
 import proshopImg from '../images/projects/proshop-product.png';
-import elMiradorImg from '../images/projects/el-mirador.png';
+// import elMiradorImg from '../images/projects/el-mirador.png';
 
 const projectsData = [
-  // {
-  //   id: 1,
-  //   urlName: 'Omnifood',
-  //   // imageURL: '../assets/images/projects/omnifood.png',
-  //   imageURL: omnifoodImg,
-  //   title: 'Omnifood',
-  //   desc: 'Static website showcasing a fictitious food delivery company.',
-  //   tech: ['HTML', 'Responsive CSS', 'Vanilla JS'],
-  //   other: '',
-  //   demoURL: 'https://food-ai-demo.netlify.app/',
-  //   codeURL: 'https://github.com/alicefrsr/Omnifood',
-  //   categories: ['HTML/CSS Integration'],
+  {
+    id: 1,
+    urlName: 'Omnifood',
+    // imageURL: '../assets/images/projects/omnifood.png',
+    imageURL: omnifoodImg,
+    title: 'Omnifood',
+    desc: 'Static website showcasing a fictitious food delivery company.',
+    tech: ['HTML', 'Responsive CSS', 'Vanilla JS'],
+    other: '',
+    demoURL: 'https://food-ai-demo.netlify.app/',
+    codeURL: 'https://github.com/alicefrsr/Omnifood',
+    categories: ['HTML/CSS Integration'],
+  },
   {
     id: 1,
     urlName: 'guessing-game',
@@ -102,12 +104,12 @@ const projectsData = [
     // imageURL: '../../../img/quiz.png ',
     imageURL: quizImg,
     title: 'Quiz app',
-    desc: 'React quiz built with React with 15 questions to test your knowledge ! Features include a timer, a cancel and a restart button. A highscore is saved each time and updated if your latest score is higher than your previous highscore. Deployed on Netlify, then on Vercel with an Express server just to test things out.',
+    desc: 'React quiz built with React with 15 questions to test your knowledge ! Features include a timer, a cancel and a restart button. A highscore is saved each time and updated if your latest score is higher than your previous highscore. Deployed on Netlify, then on Vercel with an Express server just to test things out with a server.',
     tech: ['React', 'Context API', 'Express', 'Vercel'],
     other: '',
     demoURL: 'https://react-quiz-6l23.vercel.app/',
     codeURL: 'https://github.com/alicefrsr/react-quiz',
-    categories: ['React'],
+    categories: ['React', 'Full Stack'],
   },
   {
     id: 7,
@@ -135,7 +137,7 @@ const projectsData = [
     // imageURL: '../../../img/expensetracker.png',
     imageURL: expensetrackerImg,
     title: 'Expense tracker app',
-    desc: 'Simple budget App to add and delete income and expenses, using the MERN stack. (Deployed on render.com, so please be patient when loading the live demo...)',
+    desc: "Simple budget App to add and delete income and expenses, using the MERN stack. (Temp deploy on render.com's free plan, please be patient when loading the live demo!)",
     tech: ['React', 'Responsive', 'Express', 'MongoDB'],
     other: '',
     demoURL: 'https://expense-tracker-app-9kw2.onrender.com',
@@ -148,26 +150,26 @@ const projectsData = [
     // imageURL: '../../../img/proshop-product.png',
     imageURL: proshopImg,
     title: 'e-commerce',
-    desc: "Fullstack e-commerce platform, following Brad Traversy's Udemy tutorial, to further consolidate my Redux skills and all CRUD operations on a database. A good exposure to authentification with JWT, PayPal & Credit card integration. (Deployed on render.com, so please be patient when loading the live demo !)",
+    desc: "Fullstack e-commerce platform, following Brad Traversy's Udemy tutorial, to further consolidate my Redux skills and all CRUD operations on a database. A good exposure to authentification with JWT, PayPal & Credit card integration. (Temp deploy on render.com's free plan, please be patient when loading the live demo!)",
     tech: ['React', 'Bootstrap', 'Redux', 'Express', 'MongoDB'],
     other: '',
     demoURL: 'https://e-commerce-demo-proshop.onrender.com',
     codeURL: 'https://github.com/alicefrsr/e-commerce-demo',
     categories: ['React', 'Full Stack'],
   },
-  {
-    id: 10,
-    urlName: 'el-mirador',
-    // imageURL: '../../../img/el-mirador.png',
-    imageURL: elMiradorImg,
-    title: 'El Mirador',
-    desc: 'Landing page for a local restaurant in Aragon, Spain. Client requested a simple static page to have an online presence other than just Google reviews. Hosted on Hostinger using Github  repo for auto-deployment. Focus on SEO.',
-    tech: ['HTML', 'Responsive CSS', 'Hostinger', 'Github'],
-    other: '',
-    demoURL: 'Coming soon!',
-    codeURL: 'Private repo for now, coming soon!',
-    categories: ['Professional'],
-  },
+  // {
+  //   id: 10,
+  //   urlName: 'el-mirador',
+  //   // imageURL: '../../../img/el-mirador.png',
+  //   imageURL: elMiradorImg,
+  //   title: 'El Mirador',
+  //   desc: 'Landing page for a local restaurant in Aragon, Spain. Client requested a simple static page to have an online presence other than just Google reviews. Hosted on Hostinger using Github  repo for auto-deployment. Focus on SEO.',
+  //   tech: ['HTML', 'Responsive CSS', 'Hostinger', 'Github'],
+  //   other: '',
+  //   demoURL: 'Coming soon!',
+  //   codeURL: 'Private repo for now, coming soon!',
+  //   categories: ['Professional'],
+  // },
 ];
 
 export default projectsData;
