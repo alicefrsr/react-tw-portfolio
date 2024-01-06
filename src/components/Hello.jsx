@@ -30,7 +30,7 @@ const Hello = () => {
           </p>
         </div>
 
-        <div className='pt-12 text-sm sm:text-base flex justify-center sm:justify-start'>
+        <div className='hidden sm:flex pt-12 text-sm sm:text-base justify-center sm:justify-start'>
           {/* Link to projects */}
           <a href='#projects' className='link'>
             <div className='group btn border-current hover:cursor-pointer shadow-md shadow-slate-400 hover:border-teal-600 hover:shadow-teal-600 dark:hover:border-teal-500 dark:hover:shadow-teal-500'>
