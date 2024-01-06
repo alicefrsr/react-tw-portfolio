@@ -1,9 +1,8 @@
 import { HiArrowNarrowRight } from 'react-icons/hi';
-import { motion } from 'framer-motion';
 
 const Hello = () => {
   return (
-    <section id='hello' className='tracking-wide pt-24 sm:pt-0'>
+    <section id='hello' className='tracking-wide pt-24 pb-12 sm:pt-0 sm:pb-0'>
       {/* Container */}
       <div className='pt-24 sm:pt-0 lg:max-w-[58rem] sm:max-w-[70%] px-6 h-screen mx-auto flex flex-col justify-center w-full '>
         <div className='text-2xl'>
