@@ -12,6 +12,7 @@ let filters = [
   'Vanilla JS',
   'React',
   'Full Stack',
+  'Responsive',
   // 'Professional',
 ];
 
@@ -80,8 +81,8 @@ function Projects() {
           </h3>
           <p className='pb-24'>
             Please note: if your are viewing this portfolio on a mobile device,
-            not all these projects are responsive! You can check the tech stack
-            to see which ones are.
+            not all these projects are responsive! Sometimes the focus was to
+            learn a new tech. Please use the filter to see which ones are.
           </p>
         </div>
 

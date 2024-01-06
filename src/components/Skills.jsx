@@ -22,7 +22,7 @@ let skills = [
   'Web accessibility',
   'WCAG 2.1',
   'Axe DevTools',
-  'axe Accessibility Linter',
+  // 'axe Accessibility Linter',
   'axe-core-react',
 ];
 const skillsLevel1 = [
