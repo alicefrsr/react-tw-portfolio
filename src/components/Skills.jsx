@@ -1,5 +1,3 @@
-import { motion } from 'framer-motion';
-
 let skills = [
   'MacOS',
   'VS Code',
@@ -38,34 +36,24 @@ const skillsLevel1 = [
   'Supabase',
 ];
 const skillsNow = ['NextJS', 'Typescript', 'Python', 'Web accessibility'];
-const skillsToDo = [
-  'React Native',
-  'Testing',
-  'CI/CD',
-  'Jest',
-  'Cypress',
-  'Jenkins',
-  'Solidity',
-];
+// const skillsToDo = [
+//   'React Native',
+//   'Testing',
+//   'CI/CD',
+//   'Jest',
+//   'Cypress',
+//   'Jenkins',
+//   'Solidity',
+// ];
 const languages = ['English', 'French', 'Spanish'];
 
 function Skills() {
   return (
-    <section id='skills' className='pt-20 pb-12 lg:pt-16 tracking-wide '>
+    <section id='skills' className='tracking-wide pt-24 pb-12 lg:pt-16'>
       {/* Container */}
       <div className='lg:max-w-[58rem] sm:max-w-[70%] h-fit lg:h-screen px-6 mx-auto flex flex-col justify-center w-full '>
-        {/* <h3 className='text-[2rem] font-[700] mb-8'>Skills</h3> */}
-
         {/* skills */}
         <div className='flex flex-col'>
-          {/* <motion.h3
-            initial={{ x: -500, opacity: 0 }}
-            animate={{ x: 0, opacity: 1 }}
-            transition={{ duration: 1, ease: 'easeInOut' }}
-            className='subtitle pb-12 text-teal-600 dark:text-teal-300 '
-          >
-            Toolbox
-          </motion.h3> */}
           <h3 className='font-semibold text-[3rem] font-satisfy mb-8 '>
             Toolbox
           </h3>
@@ -109,7 +97,7 @@ function Skills() {
               </ul>
             </div>
 
-            <div>
+            {/* <div>
               <p className='pb-1 font-semibold'>
                 What I am curious about and would like to explore in 2024:
               </p>
@@ -120,7 +108,7 @@ function Skills() {
                   </li>
                 ))}
               </ul>
-            </div>
+            </div> */}
 
             <div>
               <p className='pb-1 font-semibold'>Non-programming languages...</p>

@@ -1,27 +1,13 @@
-import { motion } from 'framer-motion';
-
 function Bio() {
   return (
     <section id='bio' className='py-20 tracking-wide '>
       {/* Container */}
-      <div className='lg:max-w-[58rem] sm:max-w-[70%] sm:py-20 h-screen px-6 mx-auto flex w-full'>
+      <div className='lg:max-w-[58rem] sm:max-w-[70%] sm:py-20 px-6 mx-auto flex w-full'>
         {/* <h3 className='text-[2rem] font-[700] mb-8'>Bio</h3> */}
 
         {/* bio -- left-aligned */}
         <div className='flex flex-col gap-3 flex-1 '>
-          {/* <motion.h3
-            initial={{ x: -500, opacity: 0 }}
-            animate={{ x: 0, opacity: 1 }}
-            transition={{ duration: 1, ease: 'easeInOut' }}
-            className='subtitle pb-12 text-teal-600  dark:text-teal-300 '
-          >
-            Bio
-          </motion.h3> */}
           <h3 className='font-semibold text-[3rem] font-satisfy mb-8 '>Bio</h3>
-          {/* <h4 className='italic'>
-            From <span className='bio-subtitle'>film crew</span> to{' '}
-            <span className='bio-subtitle'> yacht crew</span>...
-          </h4> */}
           <p>
             In a previous life I was a{' '}
             <span className='jobtitle'>film editor</span> based in London for 20
@@ -36,10 +22,6 @@ function Bio() {
             on private superyachts during the summer in the Mediterranean
             (2017-2020).
           </p>
-          {/* <h4 className='italic'>
-            From <span className='bio-subtitle'>marine engineering</span> to{' '}
-            <span className='bio-subtitle'> software engineering</span>...
-          </h4> */}
           <p>
             As the world shut down during the pandemic in 2020, it was a chance
             to explore what programming was all about. Two months of Python

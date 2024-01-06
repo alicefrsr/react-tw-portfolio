@@ -70,7 +70,8 @@ function Projects() {
   }
 
   return (
-    <section id='projects' className='h-fit pt-24 mb-16'>
+    // <section id='projects' className='h-fit pt-20 mb-16'>
+    <section id='projects' className='h-fit pt-24 pb-12'>
       {/* Container */}
       <div className='projects-container mx-auto'>
         <div className='lg:max-w-[58rem] sm:max-w-[70%] sm:px-6 pt-10 mx-auto flex flex-col w-full'>
