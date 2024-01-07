@@ -77,7 +77,12 @@ const Navbar = () => {
         {/* Socials icons */}
         <ul className='flex gap-4 border-r-2 border-current px-4'>
           <li className=''>
-            <a href='/' className='link'>
+            <a
+              href='https://www.linkedin.com/in/annemonnehay/'
+              target='_blank'
+              rel='noreferrer'
+              className='link'
+            >
               <IoLogoLinkedin size={30} />
             </a>
           </li>
@@ -86,7 +91,7 @@ const Navbar = () => {
               href='https://github.com/alicefrsr'
               target='_blank'
               rel='noreferrer'
-              className=' icon-link'
+              className='icon-link'
             >
               <IoLogoGithub size={28} />
             </a>

@@ -112,15 +112,15 @@ outline-offset-4 dark:outline-offset-4
 }
 
 .tech-full {
-  @apply border-2 border-slate-100 bg-slate-100 rounded-sm px-2 py-1 font-dm text-sm sm:text-base dark:bg-blueDarkest dark:border-blueDarkest;
+  @apply border-2 border-slate-100 bg-slate-100 rounded-sm px-2 py-1 font-dm text-xs sm:text-base dark:bg-blueDarkest dark:border-blueDarkest;
 }
 
 .tech-outline {
-  @apply border-2 border-slate-200 rounded-sm px-2 py-1 font-dm  dark:border-blueDarkest;
+  @apply border-2 border-slate-200 rounded-sm px-2 py-1 font-dm text-xs sm:text-base dark:border-blueDarkest;
 }
 
 .lang-outline {
-  @apply border-2 border-blueDark dark:border-slate-200 rounded-sm px-2 py-1 font-dm;
+  @apply border-2 border-blueDark dark:border-slate-200 rounded-sm px-2 py-1 font-dm text-xs sm:text-base;
 }
 
 .active-modal {
