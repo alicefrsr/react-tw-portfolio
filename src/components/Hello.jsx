@@ -9,7 +9,7 @@ const Hello = () => {
           <h1 className='text-3xl sm:text-4xl pb-4 font-satisfy tracking-wide'>
             Hello, I&#39;m <span className='text-5xl sm:text-6xl '>Anne</span>
           </h1>
-          <h2 className='jobtitle pb-12 tracking-widest'>Junior Developer</h2>
+          <h2 className='subtitle pb-12 tracking-widest'>Junior Developer</h2>
         </div>
 
         <div className='flex flex-col gap-3'>
