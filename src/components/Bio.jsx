@@ -7,7 +7,9 @@ function Bio() {
 
         {/* bio -- left-aligned */}
         <div className='flex flex-col gap-3 flex-1 '>
-          <h3 className='font-semibold text-[3rem] font-satisfy mb-8 '>Bio</h3>
+          <h3 className='font-semibold text-[3rem] font-satisfy mb-8 pb-8'>
+            Bio
+          </h3>
           <p>
             In a previous life I was a{' '}
             <span className='jobtitle'>film editor</span> based in London for 20

@@ -72,17 +72,17 @@ function Projects() {
 
   return (
     // <section id='projects' className='h-fit pt-20 mb-16'>
-    <section id='projects' className='h-fit pt-24 pb-12'>
+    <section id='projects' className='h-fit pt-20 sm:pt-24 pb-12'>
       {/* Container */}
       <div className='projects-container mx-auto'>
         <div className='lg:max-w-[58rem] sm:max-w-[70%] sm:px-6 pt-10 mx-auto flex flex-col w-full'>
-          <h3 className='font-semibold text-[3rem] font-satisfy mb-8 '>
+          <h3 className='font-semibold text-[3rem] font-satisfy mb-8 pb-8'>
             Projects
           </h3>
           <p className='pb-24'>
             Please note: if your are viewing this portfolio on a mobile device,
-            not all these projects are responsive! Sometimes the focus was to
-            learn a new tech. Please use the filter to see which ones are.
+            not all these projects are responsive. Sometimes the focus was to
+            learn a new tech. Please use the filter to display which ones are.
           </p>
         </div>
 

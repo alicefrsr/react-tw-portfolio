@@ -20,7 +20,7 @@ let skills = [
   'MongoDB',
   'Responsive',
   'Web accessibility',
-  'WCAG 2.1',
+  'WCAG',
   'Axe DevTools',
   // 'axe Accessibility Linter',
   'axe-core-react',
@@ -54,7 +54,7 @@ function Skills() {
       <div className='lg:max-w-[58rem] sm:max-w-[70%] h-fit lg:h-screen px-6 mx-auto flex flex-col justify-center w-full '>
         {/* skills */}
         <div className='flex flex-col'>
-          <h3 className='font-semibold text-[3rem] font-satisfy mb-8 '>
+          <h3 className='font-semibold text-[3rem] font-satisfy mb-8 pb-8'>
             Toolbox
           </h3>
           <div className='flex flex-col flex-1 gap-10 '>
