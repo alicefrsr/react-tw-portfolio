@@ -59,7 +59,7 @@ function Skills() {
           </h3>
           <div className='flex flex-col flex-1 gap-10 '>
             <div>
-              <p className='pb-1 font-semibold'>
+              <p className='pb-1 font-semibold text-xs sm:text-base'>
                 What I use on a daily or regular basis:
               </p>
               <ul className='flex flex-wrap gap-2 pt-2'>
@@ -72,7 +72,7 @@ function Skills() {
             </div>
 
             <div>
-              <p className='pb-1 font-semibold'>
+              <p className='pb-1 font-semibold text-xs sm:text-base'>
                 Technologies I had some exposure to:
               </p>
               <ul className='flex flex-wrap gap-2 pt-2'>
@@ -85,7 +85,7 @@ function Skills() {
             </div>
 
             <div>
-              <p className='pb-1 font-semibold'>
+              <p className='pb-1 font-semibold text-xs sm:text-base'>
                 What I am learning at the moment:
               </p>
               <ul className='flex flex-wrap gap-2 pt-2'>
@@ -111,7 +111,9 @@ function Skills() {
             </div> */}
 
             <div>
-              <p className='pb-1 font-semibold'>Non-programming languages...</p>
+              <p className='pb-1 font-semibold text-xs sm:text-base'>
+                Non-programming languages...
+              </p>
               <ul className='flex flex-wrap gap-2 pt-2'>
                 {languages.map((language, index) => (
                   <li key={index} className='lang-outline'>
