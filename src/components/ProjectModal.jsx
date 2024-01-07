@@ -37,7 +37,7 @@ function ProjectModal({ selectedProjectId, showModal, onClose }) {
     >
       {/* Overlay div: on top of everything else: w-full h-full fixed inset-0 */}
       <div
-        className='fixed flex justify-center top-0 left-0 w-full h-full z-10 bg-teal-700 bg-opacity-70 backdrop-blur-sm overflow-y-auto'
+        className='fixed flex justify-center top-0 left-0 w-full h-full z-10 bg-teal-700 bg-opacity-70 backdrop-blur-sm overflow-y-auto overflow-x-hidden'
         id='overlay'
         // onClick={() => onClose()}  // option 1: e.stopPropagation on modal container
         onClick={handleClose} // option 2: target overlay with an id, close only if matched
