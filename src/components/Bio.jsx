@@ -7,7 +7,7 @@ function Bio() {
 
         {/* bio -- left-aligned */}
         <div className='flex flex-col gap-3 flex-1 '>
-          <h3 className='font-semibold text-[3rem] font-satisfy mb-8 pb-8'>
+          <h3 className='font-semibold text-[3rem] font-satisfy mb-8 py-8'>
             Bio
           </h3>
           <p>
