@@ -4,7 +4,7 @@
 
 @layer base {
   body {
-    @apply font-[Inter] bg-white text-blueDark 
+    @apply font-[Inter] text-sm sm:text-base bg-white text-blueDark 
    dark:text-slate-200
     dark:outline-teal-300 dark:bg-blueDark;
   }
@@ -83,12 +83,12 @@ outline-offset-4 dark:outline-offset-4
 }
 
 .btn {
-  @apply flex items-center py-2 px-4 uppercase bg-slate-100 border-2 rounded-md 
+  @apply flex items-center text-sm sm:text-base py-2 px-4 uppercase bg-slate-100 border-2 rounded-md 
   ease-in duration-200  dark:bg-blueDarkest  dark:shadow-blueDarkest;
 }
 
 .btn-filter {
-  @apply duration-300 font-dm px-2 py-1 text-base  tracking-wide border-2 border-transparent rounded-sm outline-4  
+  @apply duration-300 text-sm sm:text-base font-dm px-2 py-1  tracking-wide border-2 border-transparent rounded-sm outline-4  
   outline-teal-600
   hover:text-teal-600 
   focus:text-teal-600 
@@ -128,7 +128,7 @@ outline-offset-4 dark:outline-offset-4
 }
 
 .btn-modal {
-  @apply rounded-md border-2 border-current py-1 px-2 flex gap-2 duration-300 hover:text-teal-600 dark:hover:text-teal-300;
+  @apply rounded-md border-2 border-current py-1 px-2 flex items-center justify-center gap-2 duration-300 hover:text-teal-600 dark:hover:text-teal-300;
 }
 
 .fit {

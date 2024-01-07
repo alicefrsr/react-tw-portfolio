@@ -71,17 +71,17 @@ function ProjectModal({ selectedProjectId, showModal, onClose }) {
               <h2 className='mt-8 mb-4 text-2xl font-semibold'>
                 {project.title}
               </h2>
-              <p className='text-base leading-7'>{project.desc}</p>
+              <p className='leading-7'>{project.desc}</p>
               {/* Tech stack */}
               <ul className='mt-8 flex items-center gap-2 flex-wrap'>
                 {project.tech.map((tech, index) => (
-                  <li key={index} className='tech-full text-[14px]'>
+                  <li key={index} className='tech-full'>
                     {tech}
                   </li>
                 ))}
               </ul>
               {/* External links */}
-              <div className='mt-8 flex gap-3 items-center justify-center sm:justify-start'>
+              <div className='mt-8 flex items-center justify-center gap-2 sm:justify-start'>
                 <ToolTip tooltip={`${project.demoURL}`}>
                   <a
                     href={project.demoURL}
