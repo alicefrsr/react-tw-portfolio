@@ -8,6 +8,10 @@
    dark:text-slate-200
     dark:outline-teal-300 dark:bg-blueDark;
   }
+  h1,
+  h3 {
+    @apply font-brush;
+  }
 }
 
 @layer utilities {
@@ -88,18 +92,19 @@ outline-offset-4 dark:outline-offset-4
 }
 
 .btn-filter {
-  @apply duration-300 text-sm sm:text-base font-dm px-2 py-1  tracking-wide border-2 border-transparent rounded-sm outline-4  
+  @apply duration-300 text-sm sm:text-base font-dm px-2 py-1 tracking-wide border-2 border-slate-200  outline-4  
   outline-teal-600
   hover:text-teal-600 
   focus:text-teal-600 
   
   dark:outline-none
+   dark:border-blueDarkest
   dark:hover:text-teal-300 
   dark:focus:text-teal-300  dark:focus:outline-teal-300;
 }
 
 .active-filter {
-  @apply text-teal-600 dark:text-teal-300  bg-slate-100 dark:bg-blueDarkest;
+  @apply text-teal-600 dark:text-teal-300  bg-slate-200 dark:bg-blueDarkest;
 }
 
 .glow {
@@ -134,28 +139,3 @@ outline-offset-4 dark:outline-offset-4
 .fit {
   height: fit-content;
 }
-
-/* @media only screen and (max-width: 768px) {
-    .menu {
-      width: 100%;
-      height: 100%;
-      position: fixed;
-      top: 0;
-      left: 0;
-      background-color: #00000084;
-      z-index: 100;
-    }
-    .menu ul {
-      width: 15rem;
-      height: 100%;
-      position: absolute;
-      top: 0;
-      right: 0;
-      z-index: 200;
-      background: #fff;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      line-height: 3rem;
-    }
-  } */

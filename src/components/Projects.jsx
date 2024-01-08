@@ -76,9 +76,7 @@ function Projects() {
       {/* Container */}
       <div className='projects-container mx-auto'>
         <div className='lg:max-w-[58rem] sm:max-w-[70%] sm:px-6 pt-10 mx-auto flex flex-col w-full'>
-          <h3 className='font-semibold text-[3rem] font-satisfy mb-8 pb-8'>
-            Projects
-          </h3>
+          <h3 className='font-semibold text-[3rem] mb-8 pb-8'>Projects</h3>
           <p className='pb-24'>
             Please note: if your are viewing this portfolio on a mobile device,
             not all these projects are responsive. Sometimes the focus was to

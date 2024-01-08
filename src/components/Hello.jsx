@@ -6,7 +6,7 @@ const Hello = () => {
       {/* Container */}
       <div className='pt-12 sm:pt-0 lg:max-w-[58rem] sm:max-w-[70%] px-6 h-screen mx-auto flex flex-col justify-center w-full '>
         <div className='text-2xl'>
-          <h1 className='text-3xl sm:text-4xl pb-4 font-satisfy tracking-wide'>
+          <h1 className='text-3xl sm:text-4xl pb-4 tracking-wide'>
             Hello, I&#39;m <span className='text-5xl sm:text-6xl '>Anne</span>
           </h1>
           <h2 className='subtitle pb-12 tracking-widest'>Junior Developer</h2>
