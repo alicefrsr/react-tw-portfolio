@@ -76,7 +76,7 @@ outline-offset-4 dark:outline-offset-4
 }
 
 .subtitle {
-  @apply font-dm text-sm font-semibold uppercase text-teal-600  dark:text-teal-300 tracking-widest;
+  @apply font-dm text-xs sm:text-sm font-semibold uppercase text-teal-600  dark:text-teal-300 tracking-widest;
 }
 
 .jobtitle {
