@@ -1,4 +1,4 @@
-let skills = [
+let skillsDaily = [
   'MacOS',
   'VS Code',
   'Git',
@@ -6,16 +6,20 @@ let skills = [
   'Command Line',
   'HTML5',
   'CSS3',
+  'Tailwindcss',
   'Javascript',
   'React',
-  'React Router',
-  'Bootstrap',
-  'Tailwindcss',
+  'React Testing Library',
+];
+let skillsRegular = [
   'CSS Modules',
-  'Redux',
+  'React Router',
   'Tanstack Query',
+  'Redux',
   'RESTful APIs',
+  'Postman',
   'Node.js',
+  'npm',
   'Express',
   'MongoDB',
   'Responsive',
@@ -25,17 +29,24 @@ let skills = [
   // 'axe Accessibility Linter',
   'axe-core-react',
 ];
-const skillsLevel1 = [
+const skillsIntro = [
   'Linux',
   'Windows',
   'Java',
   'Swift',
   'SwiftUI',
   'Python',
+  'Bootstrap',
   'Styled Components',
   'Supabase',
 ];
-const skillsNow = ['NextJS', 'Typescript', 'Python', 'Web accessibility'];
+const skillsNow = [
+  'React Testing Library',
+  'Jest / Vitest',
+  'Typescript',
+  'Python',
+  'Web accessibility',
+];
 // const skillsToDo = [
 //   'React Native',
 //   'Testing',
@@ -55,13 +66,28 @@ function Skills() {
         {/* skills */}
         <div className='flex flex-col'>
           <h3 className='font-semibold text-[3rem] mb-8 py-8'>Toolbox</h3>
+
           <div className='flex flex-col flex-1 gap-10 '>
             <div>
               <p className='pb-1 font-semibold text-xs sm:text-base'>
-                What I use on a daily or regular basis:
+                What I use on a <span className='highlight'> daily </span>
+                basis:
               </p>
               <ul className='flex flex-wrap gap-2 pt-2'>
-                {skills.map((skill, index) => (
+                {skillsDaily.map((skill, index) => (
+                  <li key={index} className='tech-full'>
+                    {skill}
+                  </li>
+                ))}
+              </ul>
+            </div>
+            <div>
+              <p className='pb-1 font-semibold text-xs sm:text-base'>
+                What I use on a <span className='highlight'> regular </span>{' '}
+                basis:
+              </p>
+              <ul className='flex flex-wrap gap-2 pt-2'>
+                {skillsRegular.map((skill, index) => (
                   <li key={index} className='tech-full'>
                     {skill}
                   </li>
@@ -71,10 +97,11 @@ function Skills() {
 
             <div>
               <p className='pb-1 font-semibold text-xs sm:text-base'>
-                Technologies I had some exposure to:
+                Technologies I had a{' '}
+                <span className='highlight'> basic introduction </span> to:
               </p>
               <ul className='flex flex-wrap gap-2 pt-2'>
-                {skillsLevel1.map((skill, index) => (
+                {skillsIntro.map((skill, index) => (
                   <li key={index} className='tech-full'>
                     {skill}
                   </li>
@@ -84,7 +111,8 @@ function Skills() {
 
             <div>
               <p className='pb-1 font-semibold text-xs sm:text-base'>
-                What I am learning at the moment:
+                What I am <span className='highlight'> actively learning </span>{' '}
+                at the moment:
               </p>
               <ul className='flex flex-wrap gap-2 pt-2'>
                 {skillsNow.map((skill, index) => (

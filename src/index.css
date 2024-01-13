@@ -79,7 +79,7 @@ outline-offset-4 dark:outline-offset-4
   @apply font-dm text-xs sm:text-sm font-semibold uppercase text-teal-600  dark:text-teal-300 tracking-widest;
 }
 
-.jobtitle {
+.highlight {
   @apply font-semibold text-teal-600  dark:text-teal-300;
 }
 .bio-subtitle {

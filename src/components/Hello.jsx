@@ -19,14 +19,15 @@ const Hello = () => {
             I&#39;m currently focused on building responsive and accessible web
             apps with <span className='tech'> React</span> and{' '}
             <span className='tech'> Tailwind</span> to improve my front-end
-            skills, as well as integrating back-end technologies. But I&#39;m
-            also keen to learn more about software development beyond web-based
-            apps, and get my teeth into real-world projects.
+            skills, as well as integrating back-end technologies, while learning
+            about testing and TDD. But I&#39;m also keen to learn more about
+            software development beyond web-based apps, and get my teeth into
+            real-world projects (other than my own!).
           </p>
           <p>
-            I care about design, user experience and web accessibility. Mostly,
-            I love to learn, build things, problem-solve and take on new
-            challenges.
+            I care about design, user experience, clean code and web
+            accessibility. Mostly, I love to learn, build things, collaborate,
+            share ideas, problem-solve, and take on new challenges.
           </p>
         </div>
 
