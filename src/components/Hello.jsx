@@ -15,19 +15,18 @@ const Hello = () => {
         <div className='flex flex-col gap-3'>
           <p className=''>
             This site showcases some of the things I&#39;ve built while learning
-            how to code. As a self-taught and aspiring professional developer,
-            I&#39;m currently focused on building responsive and accessible web
-            apps with <span className='tech'> React</span> and{' '}
-            <span className='tech'> Tailwind</span> to improve my front-end
-            skills, as well as integrating back-end technologies, while learning
-            about testing and TDD. But I&#39;m also keen to learn more about
-            software development beyond web-based apps, and get my teeth into
-            real-world projects (other than my own!).
+            how to code. Like me, it's a work-in-progress. As a self-taught and
+            aspiring professional developer, I&#39;m currently focused on
+            building responsive and accessible web apps with React and Tailwind
+            to improve my front-end skills, as well as integrating back-end
+            technologies, while learning about testing and TDD. But I&#39;m also
+            keen to learn more about software development beyond web-based apps,
+            and get my teeth into real-world projects (other than my own!).
           </p>
           <p>
             I care about design, user experience, clean code and web
             accessibility. Mostly, I love to learn, build things, collaborate,
-            share ideas, problem-solve, and take on new challenges.
+            problem-solve, and take on new challenges.
           </p>
         </div>
 

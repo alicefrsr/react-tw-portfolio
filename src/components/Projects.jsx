@@ -62,11 +62,11 @@ function Projects() {
 
   if (showModal) {
     document.body.classList.add('active-modal');
-    console.log(showModal);
+    // console.log(showModal);
   } else {
     {
       document.body.classList.remove('active-modal');
-      console.log(showModal);
+      // console.log(showModal);
     }
   }
 
@@ -77,10 +77,27 @@ function Projects() {
       <div className='projects-container mx-auto'>
         <div className='lg:max-w-[58rem] sm:max-w-[70%] sm:px-6 pt-10 mx-auto flex flex-col w-full'>
           <h3 className='font-semibold text-[3rem] mb-8 pb-8'>Projects</h3>
+          <p className='pb-3'>
+            As a guidance in my self-taught journey, I loosely followed a
+            curriculum close to what most "learn-how-to-code-in-6-months"
+            bootcamps offer, but took the time to build a lot to digest
+            everything and dig a little, often complementing 'doing' with
+            reading about what goes on underneath the hood, rather than jumping
+            to the 'next thing' too quickly and build on muddy foundations.
+            Here's a range of pet projects and exercises from my first baby
+            steps in HTML/CSS/Vanilla JS to learning a JS framework and building
+            a full-stack e-commerce.
+          </p>
+          <p className='pb-3'>
+            Right now, I'm consolidating what I know daily while switching to
+            Typescript and focusing on writing tests and understanding TDD best
+            practices, and will keep updating this section with related projects
+            as I go.
+          </p>
           <p className='pb-24'>
             Please note: if your are viewing this portfolio on a mobile device,
-            not all these projects are responsive. Sometimes the focus was to
-            learn a new tech. Please use the filter to display which ones are.
+            not all these projects are responsive (sometimes the focus was to
+            learn a new tech). Please use the filter to display which ones are!
           </p>
         </div>
 
