@@ -77,7 +77,7 @@ function Projects() {
       <div className='projects-container mx-auto'>
         <div className='lg:max-w-[58rem] sm:max-w-[70%] sm:px-6 pt-10 mx-auto flex flex-col w-full'>
           <h3 className='font-semibold text-[3rem] mb-8 pb-8'>Projects</h3>
-          <p className='pb-3'>
+          {/* <p className='pb-3'>
             As a guidance in my self-taught journey, I loosely followed a
             curriculum close to what most "learn-how-to-code-in-6-months"
             bootcamps offer, but took the time to build a lot to digest
@@ -93,7 +93,7 @@ function Projects() {
             Typescript and focusing on writing tests and understanding TDD best
             practices, and will keep updating this section with related projects
             as I go.
-          </p>
+          </p> */}
           <p className='pb-24'>
             Please note: if your are viewing this portfolio on a mobile device,
             not all these projects are responsive (sometimes the focus was to
