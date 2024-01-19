@@ -15,8 +15,8 @@ const Hello = () => {
         <div className='flex flex-col gap-3'>
           <p className=''>
             This site showcases some of the things I&#39;ve built while learning
-            how to code. Like me, it's a work-in-progress. As a self-taught and
-            aspiring professional developer, I&#39;m currently focused on
+            how to code. Like me, it&#39;s a work-in-progress. As a self-taught
+            and aspiring professional developer, I&#39;m currently focused on
             building responsive and accessible web apps with React and Tailwind
             to improve my front-end skills, as well as integrating back-end
             technologies, while learning about testing and TDD. But I&#39;m also

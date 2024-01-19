@@ -78,6 +78,7 @@ const Navbar = () => {
         <ul className='flex gap-4 border-r-2 border-current px-4'>
           <li className=''>
             <a
+              // data-testid='linkedin'
               href='https://www.linkedin.com/in/annemonnehay/'
               target='_blank'
               rel='noreferrer'
@@ -88,6 +89,7 @@ const Navbar = () => {
           </li>
           <li className=''>
             <a
+              // data-testid='github'
               href='https://github.com/alicefrsr'
               target='_blank'
               rel='noreferrer'
