@@ -60,7 +60,7 @@ const languages = ['English', 'French', 'Spanish'];
 
 function Skills() {
   return (
-    <section id='skills' className='tracking-wide pt-24 pb-12 lg:pt-16'>
+    <section id='skills' className='tracking-wide pt-24 pb-12'>
       {/* Container */}
       <div className='lg:max-w-[58rem] sm:max-w-[70%] h-fit lg:h-screen px-6 mx-auto flex flex-col justify-center w-full '>
         {/* skills */}
