@@ -62,7 +62,7 @@ function Skills() {
   return (
     <section id='skills' className='tracking-wide pt-24 pb-12'>
       {/* Container */}
-      <div className='lg:max-w-[58rem] sm:max-w-[70%] h-fit lg:h-screen px-6 mx-auto flex flex-col justify-center w-full '>
+      <div className='lg:max-w-[58rem] sm:max-w-[70%] h-fit px-6 mx-auto flex flex-col justify-center w-full '>
         {/* skills */}
         <div className='flex flex-col'>
           <h3 className='font-semibold text-[3rem] mb-8 py-8'>Toolbox</h3>

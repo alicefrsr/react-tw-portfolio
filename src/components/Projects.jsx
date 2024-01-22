@@ -64,10 +64,8 @@ function Projects() {
     document.body.classList.add('active-modal');
     // console.log(showModal);
   } else {
-    {
-      document.body.classList.remove('active-modal');
-      // console.log(showModal);
-    }
+    document.body.classList.remove('active-modal');
+    // console.log(showModal);
   }
 
   return (

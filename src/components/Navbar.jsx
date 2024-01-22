@@ -23,9 +23,13 @@ const Navbar = () => {
     <nav className='z-[3] fixed w-full h-16 flex justify-between items-center bg-slate-100 dark:bg-blueDarkest opacity-90 text-lg px-6 shadow-lg'>
       {/* Logo, --left-aligned */}
       <a href='#hello' className='icon-link'>
-        <span className='rounded-full w-[35px] h-[35px] md:w-[40px] md:h-[40px] bg-transparent border-2 border-current text-3xl font-[500] font-brush flex items-center justify-center'>
+        <span
+          aria-hidden='true'
+          className='rounded-full w-[35px] h-[35px] md:w-[40px] md:h-[40px] bg-transparent border-2 border-current text-3xl font-[500] font-brush flex items-center justify-center'
+        >
           A
         </span>
+        <span className='sr-only'>Hello section</span>
       </a>
 
       {/* Main menu -- centered */}
@@ -45,9 +49,15 @@ const Navbar = () => {
         onClick={toggleMobileNav}
       >
         {!openMobileNav ? (
-          <IoMenu size={25} />
+          <>
+            <IoMenu size={25} aria-hidden='true' />
+            <span className='sr-only'>Mobile menu</span>
+          </>
         ) : (
-          <FaTimes size={25} className='p-1' />
+          <>
+            <FaTimes size={25} aria-hidden='true' className='p-1' />
+            <span className='sr-only'>Close mobile menu</span>
+          </>
         )}
       </button>
 
@@ -83,8 +93,10 @@ const Navbar = () => {
               target='_blank'
               rel='noreferrer'
               className='link'
+              aria-hidden='true'
             >
               <IoLogoLinkedin size={30} />
+              <span className='sr-only'>LinkedIn (Opens in new tab)</span>
             </a>
           </li>
           <li className=''>
@@ -94,8 +106,10 @@ const Navbar = () => {
               target='_blank'
               rel='noreferrer'
               className='icon-link'
+              aria-hidden='true'
             >
               <IoLogoGithub size={28} />
+              <span className='sr-only'>Github (Opens in new tab)</span>
             </a>
           </li>
         </ul>
@@ -106,7 +120,16 @@ const Navbar = () => {
           className='ml-4 h-8 w-8 rounded-full moonsun px-1 focus:outline-none outline-offset-4 '
           onClick={toggle}
         >
-          {darkModeEnabled ? <IoSunny size={25} /> : <IoMoon size={25} />}
+          {darkModeEnabled ? (
+            <IoSunny size={25} aria-hidden='true' />
+          ) : (
+            <IoMoon size={25} aria-hidden='true' />
+          )}
+          {darkModeEnabled ? (
+            <span className='sr-only'>Light mode</span>
+          ) : (
+            <span className='sr-only'>Dark mode</span>
+          )}
         </button>
       </div>
     </nav>

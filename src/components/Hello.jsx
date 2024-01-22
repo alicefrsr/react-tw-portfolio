@@ -6,8 +6,11 @@ const Hello = () => {
       {/* Container */}
       <div className='pt-12 sm:pt-0 lg:max-w-[58rem] sm:max-w-[70%] px-6 h-screen mx-auto flex flex-col justify-center w-full '>
         <div className='text-2xl'>
-          <h1 className='text-5xl sm:text-6xl pb-4 tracking-wide'>
+          {/* <h1 className='text-5xl sm:text-6xl pb-4 tracking-wide'>
             Hello, I&#39;m <span className=''>Anne</span>
+          </h1> */}
+          <h1 className='text-5xl sm:text-7xl pb-4 tracking-wide'>
+            Anne Monnehay
           </h1>
           <h2 className='subtitle pb-12'>Junior Developer</h2>
         </div>
@@ -36,7 +39,7 @@ const Hello = () => {
             <div className='group btn border-current hover:cursor-pointer shadow-md shadow-slate-400 hover:border-teal-600 hover:shadow-teal-600 dark:hover:border-teal-500 dark:hover:shadow-teal-500'>
               <span className='mr-3'>View projects </span>
               <span className='group-hover:rotate-90 duration-200 '>
-                <HiArrowNarrowRight />
+                <HiArrowNarrowRight aria-hidden='true' />
               </span>
             </div>
           </a>

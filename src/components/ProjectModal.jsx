@@ -57,7 +57,8 @@ function ProjectModal({ selectedProjectId, showModal, onClose }) {
               onClick={() => onClose()}
               className='absolute top-[1.7rem] right-[1.7rem] w-[1.8rem] h-[1.8rem] bg-white text-[25px] flex items-center justify-center rounded-[3px] leading-0 duration-300  dark:text-blueDark link'
             >
-              &times;
+              <span aria-hidden='true'>&times;</span>
+              <span className='sr-only'>Close modal</span>
             </button>
             <figure>
               <img
@@ -88,9 +89,14 @@ function ProjectModal({ selectedProjectId, showModal, onClose }) {
                     target='_blank'
                     rel='noreferrer'
                     className='btn-modal link'
+                    aria-label='Opens in new tab'
                   >
-                    <LuExternalLink size={25} title='External link' />
-                    Live demo
+                    <LuExternalLink
+                      size={25}
+                      title='(Opens in new tab)'
+                      aria-hidden='true'
+                    />
+                    Live demo <span className='sr-only'>Opens in new tab</span>
                   </a>
                 </ToolTip>
                 <ToolTip tooltip={`${project.codeURL}`}>
@@ -100,8 +106,13 @@ function ProjectModal({ selectedProjectId, showModal, onClose }) {
                     rel='noreferrer'
                     className='btn-modal link'
                   >
-                    <FaGithub size={25} title='Github' />
-                    View code
+                    <FaGithub
+                      size={25}
+                      title='Github (Opens in new tab)'
+                      aria-hidden='true'
+                    />
+                    View code{' '}
+                    <span className='sr-only'>Github. Opens in new tab</span>
                   </a>
                 </ToolTip>
               </div>
