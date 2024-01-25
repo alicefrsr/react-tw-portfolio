@@ -88,7 +88,9 @@ function Projects() {
           {filters.map((category) => (
             <button
               key={category}
-              onClick={() => setSelectedFilter(category)}
+              onClick={() => {
+                setSelectedFilter(category);
+              }}
               className={`btn-filter ${
                 selectedFilter === category ? 'active-filter' : ''
               }`}

@@ -28,7 +28,9 @@
 
   .moonsun:hover,
   .moonsun:focus {
-    @apply text-yellow-400 bg-[#f1ebd4] boxshadow-light dark:bg-[#7e6e30] dark:boxshadow-dark active:rotate-[180deg] duration-300;
+    @apply text-yellow-400 bg-[#f1ebd4] boxshadow-light dark:bg-[#7e6e30] dark:boxshadow-dark
+    /* active:rotate-[180deg] */
+    duration-300;
   }
 }
 

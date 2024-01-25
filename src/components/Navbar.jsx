@@ -24,12 +24,12 @@ const Navbar = () => {
       {/* Logo, --left-aligned */}
       <a href='#hello' className='icon-link'>
         <span
-          aria-hidden='true'
           className='rounded-full w-[35px] h-[35px] md:w-[40px] md:h-[40px] bg-transparent border-2 border-current text-3xl font-[500] font-brush flex items-center justify-center'
+          aria-hidden='true'
         >
           A
         </span>
-        <span className='sr-only'>Hello section</span>
+        <span className='sr-only'>Anne&#39;s logo. Hello section</span>
       </a>
 
       {/* Main menu -- centered */}

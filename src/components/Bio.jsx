@@ -17,7 +17,7 @@ function Bio() {
             which led me to the Côte d&#39;Azur in France, and the Costa Brava
             and Mallorca in Spain, juggling short editing contracts with my
             regular clients back in London during the winter, with working as a
-            <span className='highlight'> deckhand, stewardess </span> and
+            <span className='highlight'> deck/stew, crew cook </span> or
             <span className='highlight'> junior engineer </span>
             on private superyachts during the summer in the Mediterranean
             (2017-2020).
