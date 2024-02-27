@@ -10,21 +10,22 @@ const Hello = () => {
             Hello, I&#39;m <span className=''>Anne</span>
           </h1> */}
           <h1 className='text-5xl sm:text-7xl pb-4 tracking-wide'>
-            Anne Monnehay
+            Hi, I'm Anne
           </h1>
           <h2 className='subtitle pb-12'>Junior Developer</h2>
         </div>
 
         <div className='flex flex-col gap-3'>
           <p className=''>
-            This site showcases some of the things I&#39;ve built while learning
-            how to code. Like me, it&#39;s a work-in-progress. As a self-taught
-            and aspiring professional developer, I&#39;m currently focused on
-            building responsive and accessible web apps with React and Tailwind
-            to improve my front-end skills, as well as integrating back-end
-            technologies, while learning about testing and TDD. But I&#39;m also
-            keen to learn more about software development beyond web-based apps,
-            and get my teeth into real-world projects (other than my own!).
+            I'm a self-taught developer currently focused on building responsive
+            and accessible web apps with <strong>React</strong> and{' '}
+            <strong>Tailwind</strong>, as well as integrating back-end
+            technologies with <strong>Node</strong>, <strong>Express </strong>
+            and <strong>MongoDB</strong>. But I&#39;m also keen to learn more
+            about software development beyond web-based apps, as well as
+            software testing, and get my teeth into real-world projects. This
+            site showcases some of the things I&#39;ve built while learning how
+            to code.
           </p>
           <p>
             I care about design, user experience, clean code and web
