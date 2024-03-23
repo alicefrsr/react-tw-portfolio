@@ -6,7 +6,7 @@ let skillsDaily = [
   'Command Line',
   'HTML5',
   'CSS3',
-  'Tailwindcss',
+  'Tailwind',
   'Javascript',
   'React',
   'React Testing Library',
