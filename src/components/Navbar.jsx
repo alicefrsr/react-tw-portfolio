@@ -10,8 +10,8 @@ import {
 import { useState } from 'react';
 import useDarkMode from '../hooks/useDarkMode';
 
-const navlinks = ['projects', 'skills', 'bio'];
-const mobileNavlinks = ['hello', 'projects', 'skills', 'bio'];
+const navlinks = ['projects', 'skills', 'about'];
+const mobileNavlinks = ['hello', 'projects', 'skills', 'about'];
 const Navbar = () => {
   const [darkModeEnabled, toggle] = useDarkMode();
   const [openMobileNav, setOpenMobileNav] = useState(false);

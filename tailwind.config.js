@@ -23,6 +23,8 @@ export default {
         fira: 'Fira Code,monospace ',
       },
       colors: {
+        sky: 'rgb(2 132 199)',
+        cyan: 'rgb(8 145 178)',
         primaryColor: '#242d52',
         secondaryColor: '#1b9075',
         secondaryColorLight: '#64ffda',

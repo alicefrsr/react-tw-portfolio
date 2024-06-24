@@ -9,7 +9,6 @@ let skillsDaily = [
   'Tailwind',
   'Javascript',
   'React',
-  'React Testing Library',
 ];
 let skillsRegular = [
   'CSS Modules',
@@ -25,9 +24,9 @@ let skillsRegular = [
   'Responsive',
   'Web accessibility',
   'WCAG',
-  'Axe DevTools',
+  // 'Axe DevTools',
   // 'axe Accessibility Linter',
-  'axe-core-react',
+  // 'axe-core-react',
 ];
 const skillsIntro = [
   'Linux',
@@ -65,7 +64,7 @@ function Skills() {
       <div className='lg:max-w-[58rem] sm:max-w-[70%] h-fit px-6 mx-auto flex flex-col justify-center w-full '>
         {/* skills */}
         <div className='flex flex-col'>
-          <h3 className='font-semibold text-[3rem] mb-8 py-8'>Toolbox</h3>
+          <h3 className='text-3xl md:text-4xl mb-8 py-8'>Toolbox</h3>
 
           <div className='flex flex-col flex-1 gap-10 '>
             <div>
@@ -108,7 +107,7 @@ function Skills() {
                 ))}
               </ul>
             </div>
-
+            {/* 
             <div>
               <p className='pb-1 font-semibold text-xs sm:text-base'>
                 What I am <span className='highlight'> actively learning </span>{' '}
@@ -117,19 +116,6 @@ function Skills() {
               <ul className='flex flex-wrap gap-2 pt-2'>
                 {skillsNow.map((skill, index) => (
                   <li key={index} className='tech-full'>
-                    {skill}
-                  </li>
-                ))}
-              </ul>
-            </div>
-
-            {/* <div>
-              <p className='pb-1 font-semibold'>
-                What I am curious about and would like to explore in 2024:
-              </p>
-              <ul className='flex flex-wrap gap-2 pt-2'>
-                {skillsToDo.map((skill, index) => (
-                  <li key={index} className='tech-outline'>
                     {skill}
                   </li>
                 ))}

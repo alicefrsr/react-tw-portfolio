@@ -9,23 +9,23 @@ const Hello = () => {
           {/* <h1 className='text-5xl sm:text-6xl pb-4 tracking-wide'>
             Hello, I&#39;m <span className=''>Anne</span>
           </h1> */}
-          <h1 className='text-5xl sm:text-7xl pb-4 tracking-wide'>
-            Hi, I'm Anne
+          <h1 className='text-4xl md:text-5xl pb-4 tracking-wide'>
+            Hello, I&#39;m Anne.
           </h1>
           <h2 className='subtitle pb-12'>Junior Developer</h2>
         </div>
 
-        <div className='flex flex-col gap-3'>
+        <div className='flex flex-col gap-3 sm:text-lg'>
           <p className=''>
-            I'm a self-taught developer currently focused on building responsive
-            and accessible web apps with <strong>React</strong> and{' '}
-            <strong>Tailwind</strong>, as well as integrating back-end
-            technologies with <strong>Node</strong>, <strong>Express </strong>
-            and <strong>MongoDB</strong>. But I&#39;m also keen to learn more
-            about software development beyond web-based apps, as well as
-            software testing, and get my teeth into real-world projects. This
-            site showcases some of the things I&#39;ve built while learning how
-            to code.
+            I&#39;m a self-taught developer currently focused on building
+            responsive and accessible sites and web apps. This site showcases
+            some of the things I&#39;ve built while learning how to code in the
+            last year or so. Starting with basic{' '}
+            <strong>HTML/CSS integration</strong>,{' '}
+            <strong>vanilla Javascript</strong> apps (2022), then moving on to{' '}
+            <strong>React</strong>, <strong>Tailwind</strong>, to integrating
+            the back-end with <strong>Node</strong>, <strong>Express </strong>
+            and <strong>MongoDB</strong> (2023).
           </p>
           <p>
             I care about design, user experience, clean code and web

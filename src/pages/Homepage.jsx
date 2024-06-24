@@ -2,7 +2,7 @@ import Navbar from '../components/Navbar';
 import Hello from '../components/Hello';
 import Projects from '../components/Projects';
 import Skills from '../components/Skills';
-import Bio from '../components/Bio';
+import About from '../components/About';
 
 function Homepage() {
   return (
@@ -11,7 +11,7 @@ function Homepage() {
       <Hello />
       <Projects />
       <Skills />
-      <Bio />
+      <About />
     </>
   );
 }
