@@ -1,5 +1,6 @@
 import omnifoodImg from '../images/projects/omnifood.png';
 import guessImg from '../images/projects/guess.png';
+import pigGameImg from '../images/projects/pigGame.png';
 import splitterImg from '../images/projects/splitter.png';
 import devfinderImg from '../images/projects/devfinder.png';
 import pizzaImg from '../images/projects/pizzaApp.png';
@@ -25,12 +26,25 @@ const projectsData = [
     categories: ['HTML/CSS Integration', 'Responsive'],
   },
   {
+    id: 10,
+    urlName: 'The Pig Game',
+    // imageURL: '../assets/images/projects/omnifood.png',
+    imageURL: pigGameImg,
+    title: 'The Pig Game',
+    desc: 'Dice game for 2 players. To practice basic logic in Vanilla JS programming, accessible modal.',
+    tech: ['HTML', 'CSS', 'Vanilla JS'],
+    other: '',
+    demoURL: 'https://alicefrsr.github.io/vanillajs-pig-game/',
+    codeURL: 'https://github.com/alicefrsr/vanillajs-pig-game',
+    categories: ['Vanilla JS'],
+  },
+  {
     id: 2,
     urlName: 'guessing-game',
     // imageURL: '../../../img/guess.png',
     imageURL: guessImg,
     title: 'Guessing game',
-    desc: 'Guess The Number game, retro style. Try to guess a random number between 1 and 100 in as little rounds as possible and save your score. One of my very first projects while learning basic logic with Javascript.',
+    desc: 'Guess The Number game, retro style. Try to guess a random number between 1 and 100 in as little rounds as possible and save your score. One of my very first projects learning basic logic with Javascript.',
     tech: ['HTML', 'CSS', 'Vanilla JS'],
     other: '',
     demoURL: 'https://guessing-game-demo.netlify.app/',
