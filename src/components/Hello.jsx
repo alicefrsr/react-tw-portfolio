@@ -21,11 +21,13 @@ const Hello = () => {
             responsive and accessible sites and web apps. This site showcases
             some of the things I&#39;ve built while learning how to code in the
             last year or so. Starting with basic{' '}
-            <strong>HTML/CSS integration</strong>,{' '}
-            <strong>vanilla Javascript</strong> apps (2022), then moving on to{' '}
-            <strong>React</strong>, <strong>Tailwind</strong>, to integrating
-            the back-end with <strong>Node</strong>, <strong>Express </strong>
-            and <strong>MongoDB</strong> (2023).
+            <span className='highlight'>HTML/CSS integration</span>,{' '}
+            <span className='highlight'>vanilla Javascript</span> apps (2022),
+            then moving on to <span className='highlight'>React</span>,{' '}
+            <span className='highlight'>Tailwind</span>, to integrating the
+            back-end with <span className='highlight'>Node</span>,{' '}
+            <span className='highlight'>Express </span>
+            and <span className='highlight'>MongoDB</span> (2023).
           </p>
           <p>
             I care about design, user experience, clean code and web

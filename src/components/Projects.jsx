@@ -77,9 +77,10 @@ function Projects() {
           <h3 className='text-3xl md:text-4xl mb-8 pb-8'>Projects</h3>
 
           <p className='pb-24'>
-            Please note: if your are viewing this portfolio on a mobile device,
-            not all these projects are responsive (sometimes the focus was to
-            learn a new tech). Please use the filter to display which ones are!
+            ⚠️ Please note: if your are viewing this portfolio on a mobile
+            device, not all these projects are responsive (sometimes the focus
+            was to learn a new tech). Please use the{' '}
+            <span className='highlight'>filter</span> to display which ones are!
           </p>
         </div>
 

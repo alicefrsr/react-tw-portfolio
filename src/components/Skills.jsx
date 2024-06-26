@@ -9,6 +9,7 @@ let skillsDaily = [
   'Tailwind',
   'Javascript',
   'React',
+  'npm',
 ];
 let skillsRegular = [
   'CSS Modules',
@@ -18,7 +19,6 @@ let skillsRegular = [
   'RESTful APIs',
   'Postman',
   'Node.js',
-  'npm',
   'Express',
   'MongoDB',
   'Responsive',

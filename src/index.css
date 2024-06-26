@@ -86,7 +86,7 @@ outline-offset-4 dark:outline-offset-4
 }
 
 .highlight {
-  @apply font-semibold text-teal-600  dark:text-teal-300;
+  @apply font-semibold dark:font-normal dark:text-teal-300;
 }
 .bio-subtitle {
   @apply text-sm font-semibold uppercase;
