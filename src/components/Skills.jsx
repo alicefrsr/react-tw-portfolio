@@ -39,13 +39,13 @@ const skillsIntro = [
   'Styled Components',
   'Supabase',
 ];
-const skillsNow = [
-  'React Testing Library',
-  'Jest / Vitest',
-  'Typescript',
-  'Python',
-  'Web accessibility',
-];
+// const skillsNow = [
+//   'React Testing Library',
+//   'Jest / Vitest',
+//   'Typescript',
+//   'Python',
+//   'Web accessibility',
+// ];
 // const skillsToDo = [
 //   'React Native',
 //   'Testing',
