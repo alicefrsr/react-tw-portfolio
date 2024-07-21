@@ -30,6 +30,7 @@ const projectsData = [
     demoURL: 'https://food-ai-demo.netlify.app/',
     codeURL: 'https://github.com/alicefrsr/Omnifood',
     categories: ['HTML/CSS Integration', 'Responsive'],
+    tag: 'Frontend',
   },
   {
     id: 10,
@@ -43,6 +44,7 @@ const projectsData = [
     demoURL: 'https://alicefrsr.github.io/vanillajs-pig-game/',
     codeURL: 'https://github.com/alicefrsr/vanillajs-pig-game',
     categories: ['Vanilla JS'],
+    tag: 'Frontend',
   },
   {
     id: 2,
@@ -56,6 +58,7 @@ const projectsData = [
     demoURL: 'https://guessing-game-demo.netlify.app/',
     codeURL: 'https://github.com/alicefrsr/GuessTheNumber',
     categories: ['HTML/CSS Integration', 'Vanilla JS'],
+    tag: 'Frontend',
   },
   {
     id: 3,
@@ -75,6 +78,7 @@ const projectsData = [
     demoURL: 'https://splitter-demo.netlify.app/',
     codeURL: 'https://github.com/alicefrsr/Splitter',
     categories: ['Vanilla JS', 'HTML/CSS Integration', 'Responsive'],
+    tag: 'Frontend',
   },
   {
     id: 4,
@@ -87,7 +91,8 @@ const projectsData = [
     other: '',
     demoURL: 'https://devfinder-demo.netlify.app/',
     codeURL: 'https://github.com/alicefrsr/React-devfinder-App',
-    categories: ['React', 'HTML/CSS Integration', 'Responsive'],
+    categories: ['all', 'React', 'HTML/CSS Integration', 'Responsive'],
+    tag: 'Frontend',
   },
   {
     id: 5,
@@ -107,7 +112,8 @@ const projectsData = [
     other: '',
     demoURL: 'https://another-todoapp.netlify.app/',
     codeURL: 'https://github.com/alicefrsr/React-todoApp',
-    categories: ['React'],
+    categories: ['all', 'React'],
+    tag: 'Frontend',
   },
   // {
   //   id: 6,
@@ -141,7 +147,8 @@ const projectsData = [
     other: '',
     demoURL: 'https://another-react-quiz.netlify.app/',
     codeURL: 'https://github.com/alicefrsr/react-quiz',
-    categories: ['React'],
+    categories: ['all', 'React'],
+    tag: 'Frontend',
   },
   {
     id: 8,
@@ -161,7 +168,8 @@ const projectsData = [
     other: '',
     demoURL: 'https://chiaras-pizza.netlify.app/',
     codeURL: 'https://github.com/alicefrsr/react-router-pizza',
-    categories: ['React', 'Responsive'],
+    categories: ['all', 'React', 'Responsive'],
+    tag: 'Fullstack',
   },
   {
     id: 9,
@@ -183,7 +191,8 @@ const projectsData = [
     other: '',
     demoURL: 'https://expense-tracker-app-9kw2.onrender.com',
     codeURL: 'https://github.com/alicefrsr/React-expense-tracker-App',
-    categories: ['React', 'Full Stack', 'Responsive'],
+    categories: ['all', 'React', 'Full Stack', 'Responsive'],
+    tag: 'Fullstack',
   },
   {
     id: 10,
@@ -207,7 +216,8 @@ const projectsData = [
     other: '',
     demoURL: 'https://e-commerce-demo-proshop.onrender.com',
     codeURL: 'https://github.com/alicefrsr/e-commerce-demo',
-    categories: ['React', 'Full Stack'],
+    categories: ['all', 'React', 'Full Stack'],
+    tag: 'Fullstack',
   },
   // {
   //   id: 11,

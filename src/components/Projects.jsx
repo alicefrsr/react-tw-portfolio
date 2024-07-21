@@ -73,6 +73,7 @@ function Projects() {
     <section id='projects' className='h-fit pt-20 sm:pt-24 pb-12'>
       {/* Container */}
       <div className='projects-container mx-auto'>
+        {/* Note */}
         <div className='lg:max-w-[58rem] sm:max-w-[70%] sm:px-6 pt-10 mx-auto flex flex-col w-full'>
           <h3 className='text-3xl md:text-4xl mb-8 pb-8'>Projects</h3>
 

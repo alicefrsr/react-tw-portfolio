@@ -3,8 +3,8 @@
 ## What's this?
 
 My first portfolio, built with React, to learn Tailwind, deployed on Netlify.
-Made to showcase some of the first React apps I hade made, as well as earlier
-projects I built in the process of learning HTML+CSS, accessibility, and basic
+Made to showcase some of the first React apps I made, as well as earlier
+projects built in the process of learning HTML+CSS, accessibility, and basic
 programming with vanilla Javascript. There's also a couple of fullstack projects
 as I started taking a look at how to setup a basic server, a CRUD api, and
 connect to a database.
@@ -21,4 +21,4 @@ Features:
 
 ## Live site
 
-Here: [Porfolio](https://huggabug.netlify.app)
+Here: [Porfolio v1.0](https://huggabug.netlify.app)

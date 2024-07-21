@@ -29,6 +29,7 @@ const Navbar = () => {
         >
           A
         </span>
+
         <span className='sr-only'>Anne&#39;s logo. Hello section</span>
       </a>
 
